@@ -1,0 +1,1065 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C2D201A76833BCC133A3D21 /* libPods-微信朋友圈.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B7C7A4A6D744E623E6C51C5 /* libPods-微信朋友圈.a */; };
+		DE155D81206E10AE009947C9 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = DE155D7F206E10AE009947C9 /* UIView+Frame.m */; };
+		DE4D738B207B02EA007819FF /* LLYOperationMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4D738A207B02EA007819FF /* LLYOperationMenuView.m */; };
+		DE4D738E207B0A05007819FF /* UIButton+CustomBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4D738D207B0A05007819FF /* UIButton+CustomBtn.m */; };
+		DE56868C2062296A008B94FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE56868B2062296A008B94FE /* AppDelegate.m */; };
+		DE5686922062296A008B94FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5686902062296A008B94FE /* Main.storyboard */; };
+		DE5686942062296A008B94FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5686932062296A008B94FE /* Assets.xcassets */; };
+		DE5686972062296A008B94FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5686952062296A008B94FE /* LaunchScreen.storyboard */; };
+		DE56869A2062296A008B94FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5686992062296A008B94FE /* main.m */; };
+		DE5686A42062296A008B94FE /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5686A32062296A008B94FE /* _____Tests.m */; };
+		DE5686AF2062296A008B94FE /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5686AE2062296A008B94FE /* _____UITests.m */; };
+		DE5686CD20622B6D008B94FE /* LLYBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5686CC20622B6D008B94FE /* LLYBaseNavigationController.m */; };
+		DE5686D020622BAE008B94FE /* LLYBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5686CF20622BAE008B94FE /* LLYBaseTableViewController.m */; };
+		DE5686D320622BD9008B94FE /* LLYDiscoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5686D220622BD9008B94FE /* LLYDiscoverController.m */; };
+		DE5686D620622BE8008B94FE /* LLYMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5686D520622BE8008B94FE /* LLYMineController.m */; };
+		DE5686D920622BF5008B94FE /* LLYHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5686D820622BF5008B94FE /* LLYHomeController.m */; };
+		DE5686DC20622C0C008B94FE /* LLYContactController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5686DB20622C0C008B94FE /* LLYContactController.m */; };
+		DE5686DF20622D0F008B94FE /* LLYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5686DE20622D0F008B94FE /* LLYTabBarController.m */; };
+		DE5686E420622DB9008B94FE /* LLYTimeLineController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5686E320622DB9008B94FE /* LLYTimeLineController.m */; };
+		DE5686EC20622FC0008B94FE /* Home.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5686EB20622FC0008B94FE /* Home.xcassets */; };
+		DE5686EE20622FD5008B94FE /* Mine.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5686ED20622FD5008B94FE /* Mine.xcassets */; };
+		DE5686F020623237008B94FE /* Discover.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5686EF20623237008B94FE /* Discover.xcassets */; };
+		DE5686F220623246008B94FE /* Contact.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5686F120623246008B94FE /* Contact.xcassets */; };
+		DE5686F82062333B008B94FE /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5686F72062333B008B94FE /* Image.xcassets */; };
+		DE5686FC206240E5008B94FE /* LLYDiscoverController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5686FB206240E5008B94FE /* LLYDiscoverController.storyboard */; };
+		DE5686FF20624671008B94FE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5686FE20624671008B94FE /* ViewController.m */; };
+		DE56870520624A92008B94FE /* LLYTimeLineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE56870420624A92008B94FE /* LLYTimeLineCell.m */; };
+		DE56870820624AAB008B94FE /* LLYTimeLineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DE56870720624AAB008B94FE /* LLYTimeLineModel.m */; };
+		DE60994020720A420041A0D1 /* Discover.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE60993F20720A420041A0D1 /* Discover.xcassets */; };
+		DE609943207384BB0041A0D1 /* LLYImgContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE609942207384BB0041A0D1 /* LLYImgContainerView.m */; };
+		DE6FBD5D207A55AA00334509 /* LLYTimeLineFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6FBD5C207A55AA00334509 /* LLYTimeLineFrameModel.m */; };
+		DE6FBD60207A625D00334509 /* NSString+TimeOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6FBD5F207A625D00334509 /* NSString+TimeOperation.m */; };
+		DE7D132D207B64CF00FADC6F /* LLYLikeAndCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7D132C207B64CF00FADC6F /* LLYLikeAndCommentView.m */; };
+		DEB742802085F151004EF510 /* LLYImageBrowse.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB7427F2085F151004EF510 /* LLYImageBrowse.m */; };
+		DEB742832085F9C1004EF510 /* LLYImageBrowseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB742822085F9C1004EF510 /* LLYImageBrowseCell.m */; };
+		DEB742852085F9D5004EF510 /* LLYImageBrowseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEB742842085F9D5004EF510 /* LLYImageBrowseCell.xib */; };
+		DEB78BA82092C4AF008DB4F0 /* LLYBlockController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB78BA72092C4AF008DB4F0 /* LLYBlockController.m */; };
+		DEB78BAC2092C9CC008DB4F0 /* RuntimeController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB78BAB2092C9CC008DB4F0 /* RuntimeController.m */; };
+		DEB78BB02092EC0E008DB4F0 /* MyBlogController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB78BAF2092EC0E008DB4F0 /* MyBlogController.m */; };
+		DEB78BB42092F160008DB4F0 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB78BB32092F160008DB4F0 /* Person.m */; };
+		DEB78BBD20930DAD008DB4F0 /* NSURL+swizing.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB78BBC20930DAD008DB4F0 /* NSURL+swizing.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DE5686A02062296A008B94FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE56867F2062296A008B94FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE5686862062296A008B94FE;
+			remoteInfo = "微信朋友圈";
+		};
+		DE5686AB2062296A008B94FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE56867F2062296A008B94FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE5686862062296A008B94FE;
+			remoteInfo = "微信朋友圈";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5951B11BE626826A22749D0A /* Pods-微信朋友圈.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-微信朋友圈.release.xcconfig"; path = "Pods/Target Support Files/Pods-微信朋友圈/Pods-微信朋友圈.release.xcconfig"; sourceTree = "<group>"; };
+		8B7C7A4A6D744E623E6C51C5 /* libPods-微信朋友圈.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-微信朋友圈.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9390B37A6A0A3D6A4CDF5104 /* Pods-微信朋友圈.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-微信朋友圈.debug.xcconfig"; path = "Pods/Target Support Files/Pods-微信朋友圈/Pods-微信朋友圈.debug.xcconfig"; sourceTree = "<group>"; };
+		DE155D7F206E10AE009947C9 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		DE155D80206E10AE009947C9 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		DE4D7389207B02EA007819FF /* LLYOperationMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYOperationMenuView.h; sourceTree = "<group>"; };
+		DE4D738A207B02EA007819FF /* LLYOperationMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYOperationMenuView.m; sourceTree = "<group>"; };
+		DE4D738C207B0A05007819FF /* UIButton+CustomBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+CustomBtn.h"; sourceTree = "<group>"; };
+		DE4D738D207B0A05007819FF /* UIButton+CustomBtn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CustomBtn.m"; sourceTree = "<group>"; };
+		DE5686872062296A008B94FE /* 微信朋友圈.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "微信朋友圈.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE56868A2062296A008B94FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DE56868B2062296A008B94FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DE5686912062296A008B94FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE5686932062296A008B94FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE5686962062296A008B94FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE5686982062296A008B94FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE5686992062296A008B94FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DE56869F2062296A008B94FE /* 微信朋友圈Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "微信朋友圈Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE5686A32062296A008B94FE /* _____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____Tests.m"; sourceTree = "<group>"; };
+		DE5686A52062296A008B94FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE5686AA2062296A008B94FE /* 微信朋友圈UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "微信朋友圈UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE5686AE2062296A008B94FE /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
+		DE5686B02062296A008B94FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE5686CB20622B6D008B94FE /* LLYBaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYBaseNavigationController.h; sourceTree = "<group>"; };
+		DE5686CC20622B6D008B94FE /* LLYBaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYBaseNavigationController.m; sourceTree = "<group>"; };
+		DE5686CE20622BAE008B94FE /* LLYBaseTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYBaseTableViewController.h; sourceTree = "<group>"; };
+		DE5686CF20622BAE008B94FE /* LLYBaseTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYBaseTableViewController.m; sourceTree = "<group>"; };
+		DE5686D120622BD9008B94FE /* LLYDiscoverController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYDiscoverController.h; sourceTree = "<group>"; };
+		DE5686D220622BD9008B94FE /* LLYDiscoverController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYDiscoverController.m; sourceTree = "<group>"; };
+		DE5686D420622BE8008B94FE /* LLYMineController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYMineController.h; sourceTree = "<group>"; };
+		DE5686D520622BE8008B94FE /* LLYMineController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYMineController.m; sourceTree = "<group>"; };
+		DE5686D720622BF5008B94FE /* LLYHomeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYHomeController.h; sourceTree = "<group>"; };
+		DE5686D820622BF5008B94FE /* LLYHomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYHomeController.m; sourceTree = "<group>"; };
+		DE5686DA20622C0C008B94FE /* LLYContactController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYContactController.h; sourceTree = "<group>"; };
+		DE5686DB20622C0C008B94FE /* LLYContactController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYContactController.m; sourceTree = "<group>"; };
+		DE5686DD20622D0F008B94FE /* LLYTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYTabBarController.h; sourceTree = "<group>"; };
+		DE5686DE20622D0F008B94FE /* LLYTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYTabBarController.m; sourceTree = "<group>"; };
+		DE5686E220622DB9008B94FE /* LLYTimeLineController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYTimeLineController.h; sourceTree = "<group>"; };
+		DE5686E320622DB9008B94FE /* LLYTimeLineController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYTimeLineController.m; sourceTree = "<group>"; };
+		DE5686EB20622FC0008B94FE /* Home.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Home.xcassets; sourceTree = "<group>"; };
+		DE5686ED20622FD5008B94FE /* Mine.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Mine.xcassets; sourceTree = "<group>"; };
+		DE5686EF20623237008B94FE /* Discover.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Discover.xcassets; sourceTree = "<group>"; };
+		DE5686F120623246008B94FE /* Contact.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Contact.xcassets; sourceTree = "<group>"; };
+		DE5686F72062333B008B94FE /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
+		DE5686F9206239A3008B94FE /* GlobalHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalHeader.h; sourceTree = "<group>"; };
+		DE5686FA20623A7F008B94FE /* LLYTimeLine.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYTimeLine.pch; sourceTree = "<group>"; };
+		DE5686FB206240E5008B94FE /* LLYDiscoverController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LLYDiscoverController.storyboard; sourceTree = "<group>"; };
+		DE5686FD20624671008B94FE /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DE5686FE20624671008B94FE /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DE56870320624A92008B94FE /* LLYTimeLineCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYTimeLineCell.h; sourceTree = "<group>"; };
+		DE56870420624A92008B94FE /* LLYTimeLineCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYTimeLineCell.m; sourceTree = "<group>"; };
+		DE56870620624AAB008B94FE /* LLYTimeLineModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYTimeLineModel.h; sourceTree = "<group>"; };
+		DE56870720624AAB008B94FE /* LLYTimeLineModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYTimeLineModel.m; sourceTree = "<group>"; };
+		DE60993F20720A420041A0D1 /* Discover.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Discover.xcassets; sourceTree = "<group>"; };
+		DE609941207384BB0041A0D1 /* LLYImgContainerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYImgContainerView.h; sourceTree = "<group>"; };
+		DE609942207384BB0041A0D1 /* LLYImgContainerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYImgContainerView.m; sourceTree = "<group>"; };
+		DE6FBD5B207A55AA00334509 /* LLYTimeLineFrameModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYTimeLineFrameModel.h; sourceTree = "<group>"; };
+		DE6FBD5C207A55AA00334509 /* LLYTimeLineFrameModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYTimeLineFrameModel.m; sourceTree = "<group>"; };
+		DE6FBD5E207A625D00334509 /* NSString+TimeOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+TimeOperation.h"; sourceTree = "<group>"; };
+		DE6FBD5F207A625D00334509 /* NSString+TimeOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+TimeOperation.m"; sourceTree = "<group>"; };
+		DE7D132B207B64CF00FADC6F /* LLYLikeAndCommentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYLikeAndCommentView.h; sourceTree = "<group>"; };
+		DE7D132C207B64CF00FADC6F /* LLYLikeAndCommentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYLikeAndCommentView.m; sourceTree = "<group>"; };
+		DEB7427E2085F151004EF510 /* LLYImageBrowse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYImageBrowse.h; sourceTree = "<group>"; };
+		DEB7427F2085F151004EF510 /* LLYImageBrowse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYImageBrowse.m; sourceTree = "<group>"; };
+		DEB742812085F9C1004EF510 /* LLYImageBrowseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYImageBrowseCell.h; sourceTree = "<group>"; };
+		DEB742822085F9C1004EF510 /* LLYImageBrowseCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYImageBrowseCell.m; sourceTree = "<group>"; };
+		DEB742842085F9D5004EF510 /* LLYImageBrowseCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LLYImageBrowseCell.xib; sourceTree = "<group>"; };
+		DEB78BA62092C4AF008DB4F0 /* LLYBlockController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYBlockController.h; sourceTree = "<group>"; };
+		DEB78BA72092C4AF008DB4F0 /* LLYBlockController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYBlockController.m; sourceTree = "<group>"; };
+		DEB78BAA2092C9CC008DB4F0 /* RuntimeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeController.h; sourceTree = "<group>"; };
+		DEB78BAB2092C9CC008DB4F0 /* RuntimeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeController.m; sourceTree = "<group>"; };
+		DEB78BAE2092EC0E008DB4F0 /* MyBlogController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyBlogController.h; sourceTree = "<group>"; };
+		DEB78BAF2092EC0E008DB4F0 /* MyBlogController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyBlogController.m; sourceTree = "<group>"; };
+		DEB78BB22092F160008DB4F0 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		DEB78BB32092F160008DB4F0 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		DEB78BBB20930DAD008DB4F0 /* NSURL+swizing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+swizing.h"; sourceTree = "<group>"; };
+		DEB78BBC20930DAD008DB4F0 /* NSURL+swizing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+swizing.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE5686842062296A008B94FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C2D201A76833BCC133A3D21 /* libPods-微信朋友圈.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE56869C2062296A008B94FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE5686A72062296A008B94FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5FF2B94CA5B99BD8EFAD8D6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B7C7A4A6D744E623E6C51C5 /* libPods-微信朋友圈.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B0C5EB3228755352C20A30D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9390B37A6A0A3D6A4CDF5104 /* Pods-微信朋友圈.debug.xcconfig */,
+				5951B11BE626826A22749D0A /* Pods-微信朋友圈.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DE155D7E206E10A2009947C9 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				DE155D80206E10AE009947C9 /* UIView+Frame.h */,
+				DE155D7F206E10AE009947C9 /* UIView+Frame.m */,
+				DE6FBD5E207A625D00334509 /* NSString+TimeOperation.h */,
+				DE6FBD5F207A625D00334509 /* NSString+TimeOperation.m */,
+				DE4D738C207B0A05007819FF /* UIButton+CustomBtn.h */,
+				DE4D738D207B0A05007819FF /* UIButton+CustomBtn.m */,
+				DEB78BBB20930DAD008DB4F0 /* NSURL+swizing.h */,
+				DEB78BBC20930DAD008DB4F0 /* NSURL+swizing.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		DE4D7388207B02C2007819FF /* OperationMenuView */ = {
+			isa = PBXGroup;
+			children = (
+				DE4D7389207B02EA007819FF /* LLYOperationMenuView.h */,
+				DE4D738A207B02EA007819FF /* LLYOperationMenuView.m */,
+			);
+			path = OperationMenuView;
+			sourceTree = "<group>";
+		};
+		DE56867E2062296A008B94FE = {
+			isa = PBXGroup;
+			children = (
+				DE5686892062296A008B94FE /* 微信朋友圈 */,
+				DE5686A22062296A008B94FE /* 微信朋友圈Tests */,
+				DE5686AD2062296A008B94FE /* 微信朋友圈UITests */,
+				DE5686882062296A008B94FE /* Products */,
+				8B0C5EB3228755352C20A30D /* Pods */,
+				5FF2B94CA5B99BD8EFAD8D6E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DE5686882062296A008B94FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE5686872062296A008B94FE /* 微信朋友圈.app */,
+				DE56869F2062296A008B94FE /* 微信朋友圈Tests.xctest */,
+				DE5686AA2062296A008B94FE /* 微信朋友圈UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE5686892062296A008B94FE /* 微信朋友圈 */ = {
+			isa = PBXGroup;
+			children = (
+				DE5686FD20624671008B94FE /* ViewController.h */,
+				DE5686FE20624671008B94FE /* ViewController.m */,
+				DE5686BD20622990008B94FE /* Classes */,
+				DE5686902062296A008B94FE /* Main.storyboard */,
+				DE5686932062296A008B94FE /* Assets.xcassets */,
+				DE5686952062296A008B94FE /* LaunchScreen.storyboard */,
+				DE5686982062296A008B94FE /* Info.plist */,
+				DE5686992062296A008B94FE /* main.m */,
+			);
+			path = "微信朋友圈";
+			sourceTree = "<group>";
+		};
+		DE5686A22062296A008B94FE /* 微信朋友圈Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DE5686A32062296A008B94FE /* _____Tests.m */,
+				DE5686A52062296A008B94FE /* Info.plist */,
+			);
+			path = "微信朋友圈Tests";
+			sourceTree = "<group>";
+		};
+		DE5686AD2062296A008B94FE /* 微信朋友圈UITests */ = {
+			isa = PBXGroup;
+			children = (
+				DE5686AE2062296A008B94FE /* _____UITests.m */,
+				DE5686B02062296A008B94FE /* Info.plist */,
+			);
+			path = "微信朋友圈UITests";
+			sourceTree = "<group>";
+		};
+		DE5686BC2062297E008B94FE /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				DE56868A2062296A008B94FE /* AppDelegate.h */,
+				DE56868B2062296A008B94FE /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		DE5686BD20622990008B94FE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DE60993E20720A170041A0D1 /* Source */,
+				DE155D7E206E10A2009947C9 /* Category */,
+				DE5686E520622F4C008B94FE /* Other */,
+				DE5686C920622B1F008B94FE /* AppFrame */,
+				DE5686BC2062297E008B94FE /* AppDelegate */,
+				DE5686C320622A06008B94FE /* Discover */,
+				DE5686C2206229FC008B94FE /* Mine */,
+				DE5686C1206229F5008B94FE /* Home */,
+				DE5686C0206229E4008B94FE /* Contacts */,
+				DE5686BF206229AD008B94FE /* BaseClasses */,
+				DE5686BE206229A6008B94FE /* Common */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		DE5686BE206229A6008B94FE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DEB78BAD2092EBE9008DB4F0 /* MyBlog */,
+				DE5686F9206239A3008B94FE /* GlobalHeader.h */,
+				DE5686FA20623A7F008B94FE /* LLYTimeLine.pch */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		DE5686BF206229AD008B94FE /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				DE5686CA20622B3A008B94FE /* BaseNavigationController */,
+				DE5686C820622A91008B94FE /* BaseTabViewController */,
+			);
+			path = BaseClasses;
+			sourceTree = "<group>";
+		};
+		DE5686C0206229E4008B94FE /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				DE5686DA20622C0C008B94FE /* LLYContactController.h */,
+				DE5686DB20622C0C008B94FE /* LLYContactController.m */,
+				DEB78BB12092EF73008DB4F0 /* GCD */,
+				DEB78BA92092C9BD008DB4F0 /* Runtime */,
+				DEB78BA52092C47B008DB4F0 /* Block */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		DE5686C1206229F5008B94FE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DE5686D720622BF5008B94FE /* LLYHomeController.h */,
+				DE5686D820622BF5008B94FE /* LLYHomeController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DE5686C2206229FC008B94FE /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				DE5686D420622BE8008B94FE /* LLYMineController.h */,
+				DE5686D520622BE8008B94FE /* LLYMineController.m */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		DE5686C320622A06008B94FE /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				DE5686E120622D80008B94FE /* TimeLine */,
+				DE5686E020622D7A008B94FE /* Host */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		DE5686C820622A91008B94FE /* BaseTabViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DE5686CE20622BAE008B94FE /* LLYBaseTableViewController.h */,
+				DE5686CF20622BAE008B94FE /* LLYBaseTableViewController.m */,
+			);
+			path = BaseTabViewController;
+			sourceTree = "<group>";
+		};
+		DE5686C920622B1F008B94FE /* AppFrame */ = {
+			isa = PBXGroup;
+			children = (
+				DE5686DD20622D0F008B94FE /* LLYTabBarController.h */,
+				DE5686DE20622D0F008B94FE /* LLYTabBarController.m */,
+			);
+			path = AppFrame;
+			sourceTree = "<group>";
+		};
+		DE5686CA20622B3A008B94FE /* BaseNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				DE5686CB20622B6D008B94FE /* LLYBaseNavigationController.h */,
+				DE5686CC20622B6D008B94FE /* LLYBaseNavigationController.m */,
+			);
+			path = BaseNavigationController;
+			sourceTree = "<group>";
+		};
+		DE5686E020622D7A008B94FE /* Host */ = {
+			isa = PBXGroup;
+			children = (
+				DE5686D120622BD9008B94FE /* LLYDiscoverController.h */,
+				DE5686D220622BD9008B94FE /* LLYDiscoverController.m */,
+				DE5686FB206240E5008B94FE /* LLYDiscoverController.storyboard */,
+			);
+			path = Host;
+			sourceTree = "<group>";
+		};
+		DE5686E120622D80008B94FE /* TimeLine */ = {
+			isa = PBXGroup;
+			children = (
+				DE56870120624A35008B94FE /* Controller */,
+				DE56870220624A38008B94FE /* View */,
+				DE56870020624A31008B94FE /* Model */,
+			);
+			path = TimeLine;
+			sourceTree = "<group>";
+		};
+		DE5686E520622F4C008B94FE /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				DE5686E620622F56008B94FE /* Images */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		DE5686E620622F56008B94FE /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				DE5686EB20622FC0008B94FE /* Home.xcassets */,
+				DE5686ED20622FD5008B94FE /* Mine.xcassets */,
+				DE5686EF20623237008B94FE /* Discover.xcassets */,
+				DE5686F120623246008B94FE /* Contact.xcassets */,
+				DE5686F72062333B008B94FE /* Image.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		DE56870020624A31008B94FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE56870620624AAB008B94FE /* LLYTimeLineModel.h */,
+				DE56870720624AAB008B94FE /* LLYTimeLineModel.m */,
+				DE6FBD5B207A55AA00334509 /* LLYTimeLineFrameModel.h */,
+				DE6FBD5C207A55AA00334509 /* LLYTimeLineFrameModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE56870120624A35008B94FE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE5686E220622DB9008B94FE /* LLYTimeLineController.h */,
+				DE5686E320622DB9008B94FE /* LLYTimeLineController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE56870220624A38008B94FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DEB7427D2085EA57004EF510 /* ImgBrowse */,
+				DE7D132A207B647D00FADC6F /* LikeAndCommentView */,
+				DE4D7388207B02C2007819FF /* OperationMenuView */,
+				DEA5380320635BD600ED9A45 /* PhotoContainer */,
+				DEA5380220635BBB00ED9A45 /* TimeLineCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE60993E20720A170041A0D1 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				DE60993F20720A420041A0D1 /* Discover.xcassets */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		DE7D132A207B647D00FADC6F /* LikeAndCommentView */ = {
+			isa = PBXGroup;
+			children = (
+				DE7D132B207B64CF00FADC6F /* LLYLikeAndCommentView.h */,
+				DE7D132C207B64CF00FADC6F /* LLYLikeAndCommentView.m */,
+			);
+			path = LikeAndCommentView;
+			sourceTree = "<group>";
+		};
+		DEA5380220635BBB00ED9A45 /* TimeLineCell */ = {
+			isa = PBXGroup;
+			children = (
+				DE56870320624A92008B94FE /* LLYTimeLineCell.h */,
+				DE56870420624A92008B94FE /* LLYTimeLineCell.m */,
+			);
+			path = TimeLineCell;
+			sourceTree = "<group>";
+		};
+		DEA5380320635BD600ED9A45 /* PhotoContainer */ = {
+			isa = PBXGroup;
+			children = (
+				DE609941207384BB0041A0D1 /* LLYImgContainerView.h */,
+				DE609942207384BB0041A0D1 /* LLYImgContainerView.m */,
+			);
+			path = PhotoContainer;
+			sourceTree = "<group>";
+		};
+		DEB7427D2085EA57004EF510 /* ImgBrowse */ = {
+			isa = PBXGroup;
+			children = (
+				DEB7427E2085F151004EF510 /* LLYImageBrowse.h */,
+				DEB7427F2085F151004EF510 /* LLYImageBrowse.m */,
+				DEB742812085F9C1004EF510 /* LLYImageBrowseCell.h */,
+				DEB742822085F9C1004EF510 /* LLYImageBrowseCell.m */,
+				DEB742842085F9D5004EF510 /* LLYImageBrowseCell.xib */,
+			);
+			path = ImgBrowse;
+			sourceTree = "<group>";
+		};
+		DEB78BA52092C47B008DB4F0 /* Block */ = {
+			isa = PBXGroup;
+			children = (
+				DEB78BA62092C4AF008DB4F0 /* LLYBlockController.h */,
+				DEB78BA72092C4AF008DB4F0 /* LLYBlockController.m */,
+			);
+			path = Block;
+			sourceTree = "<group>";
+		};
+		DEB78BA92092C9BD008DB4F0 /* Runtime */ = {
+			isa = PBXGroup;
+			children = (
+				DEB78BAA2092C9CC008DB4F0 /* RuntimeController.h */,
+				DEB78BAB2092C9CC008DB4F0 /* RuntimeController.m */,
+				DEB78BB22092F160008DB4F0 /* Person.h */,
+				DEB78BB32092F160008DB4F0 /* Person.m */,
+			);
+			path = Runtime;
+			sourceTree = "<group>";
+		};
+		DEB78BAD2092EBE9008DB4F0 /* MyBlog */ = {
+			isa = PBXGroup;
+			children = (
+				DEB78BAE2092EC0E008DB4F0 /* MyBlogController.h */,
+				DEB78BAF2092EC0E008DB4F0 /* MyBlogController.m */,
+			);
+			path = MyBlog;
+			sourceTree = "<group>";
+		};
+		DEB78BB12092EF73008DB4F0 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE5686862062296A008B94FE /* 微信朋友圈 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE5686B32062296A008B94FE /* Build configuration list for PBXNativeTarget "微信朋友圈" */;
+			buildPhases = (
+				277C887B44A456995FDC79A6 /* [CP] Check Pods Manifest.lock */,
+				DE5686832062296A008B94FE /* Sources */,
+				DE5686842062296A008B94FE /* Frameworks */,
+				DE5686852062296A008B94FE /* Resources */,
+				3781B43EE0E0AB292CB8E66C /* [CP] Embed Pods Frameworks */,
+				7A86A271170D1F6FC6C0098B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "微信朋友圈";
+			productName = "微信朋友圈";
+			productReference = DE5686872062296A008B94FE /* 微信朋友圈.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DE56869E2062296A008B94FE /* 微信朋友圈Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE5686B62062296A008B94FE /* Build configuration list for PBXNativeTarget "微信朋友圈Tests" */;
+			buildPhases = (
+				DE56869B2062296A008B94FE /* Sources */,
+				DE56869C2062296A008B94FE /* Frameworks */,
+				DE56869D2062296A008B94FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE5686A12062296A008B94FE /* PBXTargetDependency */,
+			);
+			name = "微信朋友圈Tests";
+			productName = "微信朋友圈Tests";
+			productReference = DE56869F2062296A008B94FE /* 微信朋友圈Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DE5686A92062296A008B94FE /* 微信朋友圈UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE5686B92062296A008B94FE /* Build configuration list for PBXNativeTarget "微信朋友圈UITests" */;
+			buildPhases = (
+				DE5686A62062296A008B94FE /* Sources */,
+				DE5686A72062296A008B94FE /* Frameworks */,
+				DE5686A82062296A008B94FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE5686AC2062296A008B94FE /* PBXTargetDependency */,
+			);
+			name = "微信朋友圈UITests";
+			productName = "微信朋友圈UITests";
+			productReference = DE5686AA2062296A008B94FE /* 微信朋友圈UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE56867F2062296A008B94FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = liluyang;
+				TargetAttributes = {
+					DE5686862062296A008B94FE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					DE56869E2062296A008B94FE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DE5686862062296A008B94FE;
+					};
+					DE5686A92062296A008B94FE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DE5686862062296A008B94FE;
+					};
+				};
+			};
+			buildConfigurationList = DE5686822062296A008B94FE /* Build configuration list for PBXProject "微信朋友圈" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE56867E2062296A008B94FE;
+			productRefGroup = DE5686882062296A008B94FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE5686862062296A008B94FE /* 微信朋友圈 */,
+				DE56869E2062296A008B94FE /* 微信朋友圈Tests */,
+				DE5686A92062296A008B94FE /* 微信朋友圈UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE5686852062296A008B94FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE5686972062296A008B94FE /* LaunchScreen.storyboard in Resources */,
+				DE5686F220623246008B94FE /* Contact.xcassets in Resources */,
+				DE5686942062296A008B94FE /* Assets.xcassets in Resources */,
+				DE5686F020623237008B94FE /* Discover.xcassets in Resources */,
+				DE5686EC20622FC0008B94FE /* Home.xcassets in Resources */,
+				DE5686F82062333B008B94FE /* Image.xcassets in Resources */,
+				DE60994020720A420041A0D1 /* Discover.xcassets in Resources */,
+				DEB742852085F9D5004EF510 /* LLYImageBrowseCell.xib in Resources */,
+				DE5686EE20622FD5008B94FE /* Mine.xcassets in Resources */,
+				DE5686FC206240E5008B94FE /* LLYDiscoverController.storyboard in Resources */,
+				DE5686922062296A008B94FE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE56869D2062296A008B94FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE5686A82062296A008B94FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		277C887B44A456995FDC79A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-微信朋友圈-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3781B43EE0E0AB292CB8E66C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-微信朋友圈/Pods-微信朋友圈-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A86A271170D1F6FC6C0098B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-微信朋友圈/Pods-微信朋友圈-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE5686832062296A008B94FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEB78BB02092EC0E008DB4F0 /* MyBlogController.m in Sources */,
+				DE4D738E207B0A05007819FF /* UIButton+CustomBtn.m in Sources */,
+				DEB742832085F9C1004EF510 /* LLYImageBrowseCell.m in Sources */,
+				DE56870820624AAB008B94FE /* LLYTimeLineModel.m in Sources */,
+				DE5686CD20622B6D008B94FE /* LLYBaseNavigationController.m in Sources */,
+				DEB742802085F151004EF510 /* LLYImageBrowse.m in Sources */,
+				DE5686E420622DB9008B94FE /* LLYTimeLineController.m in Sources */,
+				DE5686D620622BE8008B94FE /* LLYMineController.m in Sources */,
+				DE5686D320622BD9008B94FE /* LLYDiscoverController.m in Sources */,
+				DE5686D920622BF5008B94FE /* LLYHomeController.m in Sources */,
+				DE6FBD5D207A55AA00334509 /* LLYTimeLineFrameModel.m in Sources */,
+				DEB78BA82092C4AF008DB4F0 /* LLYBlockController.m in Sources */,
+				DE5686FF20624671008B94FE /* ViewController.m in Sources */,
+				DE7D132D207B64CF00FADC6F /* LLYLikeAndCommentView.m in Sources */,
+				DE5686D020622BAE008B94FE /* LLYBaseTableViewController.m in Sources */,
+				DEB78BAC2092C9CC008DB4F0 /* RuntimeController.m in Sources */,
+				DE4D738B207B02EA007819FF /* LLYOperationMenuView.m in Sources */,
+				DE56869A2062296A008B94FE /* main.m in Sources */,
+				DE609943207384BB0041A0D1 /* LLYImgContainerView.m in Sources */,
+				DE56870520624A92008B94FE /* LLYTimeLineCell.m in Sources */,
+				DE155D81206E10AE009947C9 /* UIView+Frame.m in Sources */,
+				DE6FBD60207A625D00334509 /* NSString+TimeOperation.m in Sources */,
+				DEB78BB42092F160008DB4F0 /* Person.m in Sources */,
+				DE5686DF20622D0F008B94FE /* LLYTabBarController.m in Sources */,
+				DEB78BBD20930DAD008DB4F0 /* NSURL+swizing.m in Sources */,
+				DE5686DC20622C0C008B94FE /* LLYContactController.m in Sources */,
+				DE56868C2062296A008B94FE /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE56869B2062296A008B94FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE5686A42062296A008B94FE /* _____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE5686A62062296A008B94FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE5686AF2062296A008B94FE /* _____UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DE5686A12062296A008B94FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE5686862062296A008B94FE /* 微信朋友圈 */;
+			targetProxy = DE5686A02062296A008B94FE /* PBXContainerItemProxy */;
+		};
+		DE5686AC2062296A008B94FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE5686862062296A008B94FE /* 微信朋友圈 */;
+			targetProxy = DE5686AB2062296A008B94FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DE5686902062296A008B94FE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE5686912062296A008B94FE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DE5686952062296A008B94FE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE5686962062296A008B94FE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE5686B12062296A008B94FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DE5686B22062296A008B94FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE5686B42062296A008B94FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9390B37A6A0A3D6A4CDF5104 /* Pods-微信朋友圈.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D39GTQ96VX;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREFIX_HEADER = "/Users/liluyang/Desktop/微信朋友圈/微信朋友圈/Classes/Common/LLYTimeLine.pch";
+				INFOPLIST_FILE = "微信朋友圈/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "liluyang.-----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = "-Wno-documentation";
+			};
+			name = Debug;
+		};
+		DE5686B52062296A008B94FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5951B11BE626826A22749D0A /* Pods-微信朋友圈.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D39GTQ96VX;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREFIX_HEADER = "/Users/liluyang/Desktop/微信朋友圈/微信朋友圈/Classes/Common/LLYTimeLine.pch";
+				INFOPLIST_FILE = "微信朋友圈/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "liluyang.-----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WARNING_CFLAGS = "-Wno-documentation";
+			};
+			name = Release;
+		};
+		DE5686B72062296A008B94FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D39GTQ96VX;
+				INFOPLIST_FILE = "微信朋友圈Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "liluyang.-----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/微信朋友圈.app/微信朋友圈";
+			};
+			name = Debug;
+		};
+		DE5686B82062296A008B94FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D39GTQ96VX;
+				INFOPLIST_FILE = "微信朋友圈Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "liluyang.-----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/微信朋友圈.app/微信朋友圈";
+			};
+			name = Release;
+		};
+		DE5686BA2062296A008B94FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D39GTQ96VX;
+				INFOPLIST_FILE = "微信朋友圈UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "liluyang.-----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "微信朋友圈";
+			};
+			name = Debug;
+		};
+		DE5686BB2062296A008B94FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D39GTQ96VX;
+				INFOPLIST_FILE = "微信朋友圈UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "liluyang.-----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "微信朋友圈";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE5686822062296A008B94FE /* Build configuration list for PBXProject "微信朋友圈" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE5686B12062296A008B94FE /* Debug */,
+				DE5686B22062296A008B94FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE5686B32062296A008B94FE /* Build configuration list for PBXNativeTarget "微信朋友圈" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE5686B42062296A008B94FE /* Debug */,
+				DE5686B52062296A008B94FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE5686B62062296A008B94FE /* Build configuration list for PBXNativeTarget "微信朋友圈Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE5686B72062296A008B94FE /* Debug */,
+				DE5686B82062296A008B94FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE5686B92062296A008B94FE /* Build configuration list for PBXNativeTarget "微信朋友圈UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE5686BA2062296A008B94FE /* Debug */,
+				DE5686BB2062296A008B94FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE56867F2062296A008B94FE /* Project object */;
+}

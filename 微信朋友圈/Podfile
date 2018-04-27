@@ -1,0 +1,12 @@
+platform :ios, '8.0'
+def pods
+    pod 'SDWebImage', '~> 4.0.0'
+    pod 'SDAutoLayout', '~> 2.1.7'  	
+    pod 'Masonry', '~> 1.0.2'
+    pod 'AFNetworking', '~> 3.1.0'
+    pod 'MBProgressHUD', '~> 1.0.0'
+    pod 'LHPerformanceStatusBar', '~> 0.1.0'
+end
+target '微信朋友圈' do
+    pods
+end
