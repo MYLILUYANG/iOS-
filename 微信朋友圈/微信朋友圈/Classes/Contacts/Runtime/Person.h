@@ -8,6 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Person : NSObject
+@interface Person : NSObject <NSCoding>
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *nickName;
+@property (nonatomic, assign) int age;
+@property (nonatomic, strong) NSString *sex;
+
+
+
+
+
 -(void)eat:(NSString *)food;
 @end

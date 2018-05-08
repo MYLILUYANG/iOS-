@@ -35,11 +35,15 @@
 		DE5686FF20624671008B94FE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5686FE20624671008B94FE /* ViewController.m */; };
 		DE56870520624A92008B94FE /* LLYTimeLineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE56870420624A92008B94FE /* LLYTimeLineCell.m */; };
 		DE56870820624AAB008B94FE /* LLYTimeLineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DE56870720624AAB008B94FE /* LLYTimeLineModel.m */; };
+		DE600D0E209C45E100461DF6 /* GPUImage_01_Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = DE600D0D209C45E100461DF6 /* GPUImage_01_Controller.m */; };
+		DE600D12209C59F600461DF6 /* OpenGLESController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE600D11209C59F600461DF6 /* OpenGLESController.m */; };
 		DE60994020720A420041A0D1 /* Discover.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE60993F20720A420041A0D1 /* Discover.xcassets */; };
 		DE609943207384BB0041A0D1 /* LLYImgContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE609942207384BB0041A0D1 /* LLYImgContainerView.m */; };
 		DE6FBD5D207A55AA00334509 /* LLYTimeLineFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6FBD5C207A55AA00334509 /* LLYTimeLineFrameModel.m */; };
 		DE6FBD60207A625D00334509 /* NSString+TimeOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6FBD5F207A625D00334509 /* NSString+TimeOperation.m */; };
 		DE7D132D207B64CF00FADC6F /* LLYLikeAndCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7D132C207B64CF00FADC6F /* LLYLikeAndCommentView.m */; };
+		DEA4DDE620A1462700FCEC01 /* NSObject+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA4DDE520A1462700FCEC01 /* NSObject+Category.m */; };
+		DEA4DDE920A15B1400FCEC01 /* GCDController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA4DDE820A15B1400FCEC01 /* GCDController.m */; };
 		DEB742802085F151004EF510 /* LLYImageBrowse.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB7427F2085F151004EF510 /* LLYImageBrowse.m */; };
 		DEB742832085F9C1004EF510 /* LLYImageBrowseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB742822085F9C1004EF510 /* LLYImageBrowseCell.m */; };
 		DEB742852085F9D5004EF510 /* LLYImageBrowseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEB742842085F9D5004EF510 /* LLYImageBrowseCell.xib */; };
@@ -48,6 +52,7 @@
 		DEB78BB02092EC0E008DB4F0 /* MyBlogController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB78BAF2092EC0E008DB4F0 /* MyBlogController.m */; };
 		DEB78BB42092F160008DB4F0 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB78BB32092F160008DB4F0 /* Person.m */; };
 		DEB78BBD20930DAD008DB4F0 /* NSURL+swizing.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB78BBC20930DAD008DB4F0 /* NSURL+swizing.m */; };
+		DEB78BC020931BF3008DB4F0 /* NSString+attribute.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB78BBF20931BF3008DB4F0 /* NSString+attribute.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +126,10 @@
 		DE56870420624A92008B94FE /* LLYTimeLineCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYTimeLineCell.m; sourceTree = "<group>"; };
 		DE56870620624AAB008B94FE /* LLYTimeLineModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYTimeLineModel.h; sourceTree = "<group>"; };
 		DE56870720624AAB008B94FE /* LLYTimeLineModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYTimeLineModel.m; sourceTree = "<group>"; };
+		DE600D0C209C45E100461DF6 /* GPUImage_01_Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPUImage_01_Controller.h; sourceTree = "<group>"; };
+		DE600D0D209C45E100461DF6 /* GPUImage_01_Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPUImage_01_Controller.m; sourceTree = "<group>"; };
+		DE600D10209C59F600461DF6 /* OpenGLESController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGLESController.h; sourceTree = "<group>"; };
+		DE600D11209C59F600461DF6 /* OpenGLESController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGLESController.m; sourceTree = "<group>"; };
 		DE60993F20720A420041A0D1 /* Discover.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Discover.xcassets; sourceTree = "<group>"; };
 		DE609941207384BB0041A0D1 /* LLYImgContainerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYImgContainerView.h; sourceTree = "<group>"; };
 		DE609942207384BB0041A0D1 /* LLYImgContainerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYImgContainerView.m; sourceTree = "<group>"; };
@@ -130,6 +139,10 @@
 		DE6FBD5F207A625D00334509 /* NSString+TimeOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+TimeOperation.m"; sourceTree = "<group>"; };
 		DE7D132B207B64CF00FADC6F /* LLYLikeAndCommentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYLikeAndCommentView.h; sourceTree = "<group>"; };
 		DE7D132C207B64CF00FADC6F /* LLYLikeAndCommentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYLikeAndCommentView.m; sourceTree = "<group>"; };
+		DEA4DDE420A1462700FCEC01 /* NSObject+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Category.h"; sourceTree = "<group>"; };
+		DEA4DDE520A1462700FCEC01 /* NSObject+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Category.m"; sourceTree = "<group>"; };
+		DEA4DDE720A15B1400FCEC01 /* GCDController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDController.h; sourceTree = "<group>"; };
+		DEA4DDE820A15B1400FCEC01 /* GCDController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDController.m; sourceTree = "<group>"; };
 		DEB7427E2085F151004EF510 /* LLYImageBrowse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYImageBrowse.h; sourceTree = "<group>"; };
 		DEB7427F2085F151004EF510 /* LLYImageBrowse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYImageBrowse.m; sourceTree = "<group>"; };
 		DEB742812085F9C1004EF510 /* LLYImageBrowseCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYImageBrowseCell.h; sourceTree = "<group>"; };
@@ -145,6 +158,8 @@
 		DEB78BB32092F160008DB4F0 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		DEB78BBB20930DAD008DB4F0 /* NSURL+swizing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+swizing.h"; sourceTree = "<group>"; };
 		DEB78BBC20930DAD008DB4F0 /* NSURL+swizing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+swizing.m"; sourceTree = "<group>"; };
+		DEB78BBE20931BF3008DB4F0 /* NSString+attribute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+attribute.h"; sourceTree = "<group>"; };
+		DEB78BBF20931BF3008DB4F0 /* NSString+attribute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+attribute.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +216,8 @@
 				DE4D738D207B0A05007819FF /* UIButton+CustomBtn.m */,
 				DEB78BBB20930DAD008DB4F0 /* NSURL+swizing.h */,
 				DEB78BBC20930DAD008DB4F0 /* NSURL+swizing.m */,
+				DEB78BBE20931BF3008DB4F0 /* NSString+attribute.h */,
+				DEB78BBF20931BF3008DB4F0 /* NSString+attribute.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -320,6 +337,8 @@
 			children = (
 				DE5686DA20622C0C008B94FE /* LLYContactController.h */,
 				DE5686DB20622C0C008B94FE /* LLYContactController.m */,
+				DE600D0F209C59DF00461DF6 /* OpenGL ES */,
+				DE600D0B209C45B700461DF6 /* GPUImage */,
 				DEB78BB12092EF73008DB4F0 /* GCD */,
 				DEB78BA92092C9BD008DB4F0 /* Runtime */,
 				DEB78BA52092C47B008DB4F0 /* Block */,
@@ -453,6 +472,24 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		DE600D0B209C45B700461DF6 /* GPUImage */ = {
+			isa = PBXGroup;
+			children = (
+				DE600D0C209C45E100461DF6 /* GPUImage_01_Controller.h */,
+				DE600D0D209C45E100461DF6 /* GPUImage_01_Controller.m */,
+			);
+			path = GPUImage;
+			sourceTree = "<group>";
+		};
+		DE600D0F209C59DF00461DF6 /* OpenGL ES */ = {
+			isa = PBXGroup;
+			children = (
+				DE600D10209C59F600461DF6 /* OpenGLESController.h */,
+				DE600D11209C59F600461DF6 /* OpenGLESController.m */,
+			);
+			path = "OpenGL ES";
+			sourceTree = "<group>";
+		};
 		DE60993E20720A170041A0D1 /* Source */ = {
 			isa = PBXGroup;
 			children = (
@@ -514,6 +551,8 @@
 			children = (
 				DEB78BAA2092C9CC008DB4F0 /* RuntimeController.h */,
 				DEB78BAB2092C9CC008DB4F0 /* RuntimeController.m */,
+				DEA4DDE420A1462700FCEC01 /* NSObject+Category.h */,
+				DEA4DDE520A1462700FCEC01 /* NSObject+Category.m */,
 				DEB78BB22092F160008DB4F0 /* Person.h */,
 				DEB78BB32092F160008DB4F0 /* Person.m */,
 			);
@@ -532,6 +571,8 @@
 		DEB78BB12092EF73008DB4F0 /* GCD */ = {
 			isa = PBXGroup;
 			children = (
+				DEA4DDE720A15B1400FCEC01 /* GCDController.h */,
+				DEA4DDE820A15B1400FCEC01 /* GCDController.m */,
 			);
 			path = GCD;
 			sourceTree = "<group>";
@@ -547,7 +588,6 @@
 				DE5686832062296A008B94FE /* Sources */,
 				DE5686842062296A008B94FE /* Frameworks */,
 				DE5686852062296A008B94FE /* Resources */,
-				3781B43EE0E0AB292CB8E66C /* [CP] Embed Pods Frameworks */,
 				7A86A271170D1F6FC6C0098B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -694,30 +734,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3781B43EE0E0AB292CB8E66C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-微信朋友圈/Pods-微信朋友圈-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		7A86A271170D1F6FC6C0098B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-微信朋友圈/Pods-微信朋友圈-resources.sh",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_amatorka.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_miss_etikate.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_1.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_2.png",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_amatorka.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_miss_etikate.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_soft_elegance_1.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_soft_elegance_2.png",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -731,20 +767,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE600D0E209C45E100461DF6 /* GPUImage_01_Controller.m in Sources */,
 				DEB78BB02092EC0E008DB4F0 /* MyBlogController.m in Sources */,
 				DE4D738E207B0A05007819FF /* UIButton+CustomBtn.m in Sources */,
 				DEB742832085F9C1004EF510 /* LLYImageBrowseCell.m in Sources */,
 				DE56870820624AAB008B94FE /* LLYTimeLineModel.m in Sources */,
+				DEA4DDE620A1462700FCEC01 /* NSObject+Category.m in Sources */,
 				DE5686CD20622B6D008B94FE /* LLYBaseNavigationController.m in Sources */,
 				DEB742802085F151004EF510 /* LLYImageBrowse.m in Sources */,
 				DE5686E420622DB9008B94FE /* LLYTimeLineController.m in Sources */,
 				DE5686D620622BE8008B94FE /* LLYMineController.m in Sources */,
 				DE5686D320622BD9008B94FE /* LLYDiscoverController.m in Sources */,
 				DE5686D920622BF5008B94FE /* LLYHomeController.m in Sources */,
+				DEB78BC020931BF3008DB4F0 /* NSString+attribute.m in Sources */,
 				DE6FBD5D207A55AA00334509 /* LLYTimeLineFrameModel.m in Sources */,
 				DEB78BA82092C4AF008DB4F0 /* LLYBlockController.m in Sources */,
 				DE5686FF20624671008B94FE /* ViewController.m in Sources */,
 				DE7D132D207B64CF00FADC6F /* LLYLikeAndCommentView.m in Sources */,
+				DE600D12209C59F600461DF6 /* OpenGLESController.m in Sources */,
 				DE5686D020622BAE008B94FE /* LLYBaseTableViewController.m in Sources */,
 				DEB78BAC2092C9CC008DB4F0 /* RuntimeController.m in Sources */,
 				DE4D738B207B02EA007819FF /* LLYOperationMenuView.m in Sources */,
@@ -755,6 +795,7 @@
 				DE6FBD60207A625D00334509 /* NSString+TimeOperation.m in Sources */,
 				DEB78BB42092F160008DB4F0 /* Person.m in Sources */,
 				DE5686DF20622D0F008B94FE /* LLYTabBarController.m in Sources */,
+				DEA4DDE920A15B1400FCEC01 /* GCDController.m in Sources */,
 				DEB78BBD20930DAD008DB4F0 /* NSURL+swizing.m in Sources */,
 				DE5686DC20622C0C008B94FE /* LLYContactController.m in Sources */,
 				DE56868C2062296A008B94FE /* AppDelegate.m in Sources */,

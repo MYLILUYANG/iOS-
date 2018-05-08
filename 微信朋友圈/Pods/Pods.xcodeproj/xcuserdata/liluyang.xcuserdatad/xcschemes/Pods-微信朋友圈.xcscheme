@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '5B7DD8CA3E472B5582DAFD39F3A90233'
-               BlueprintName = 'Pods-微信朋友圈'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-微信朋友圈.a'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9F8858E2611B332687D35F24240E68F6"
+               BlueprintName = "Pods-微信朋友圈"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "libPods-微信朋友圈.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

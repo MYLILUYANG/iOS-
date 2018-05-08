@@ -9,6 +9,9 @@
 #import "LLYContactController.h"
 #import "LLYBlockController.h"
 #import "RuntimeController.h"
+#import "GPUImage_01_Controller.h"
+#import "OpenGLESController.h"
+#import "GCDController.h"
 @interface LLYContactController ()
 @property (nonatomic, strong) NSArray *addDataArray;
 @end
@@ -23,7 +26,7 @@
 -(void)loadData
 {
     
-    _addDataArray = @[@"Block 用法", @"Runtime 使用", @"GCD 使用详解", @"Sockets 使用"];
+    _addDataArray = @[@"Block 用法", @"Runtime 使用", @"GCD 使用详解", @"Sockets 使用",@"GPUImage 001", @"OpenGL SE"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -80,8 +83,24 @@
     }else if (indexPath.row == 1){
         
         RuntimeController *runtimeController = [[RuntimeController alloc] init];
-        
+        runtimeController.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:runtimeController animated:YES];
+    }else if (indexPath.row == 2){
+        GCDController *controller = [[GCDController alloc] init];
+        controller.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:controller animated:YES];
+    }
+    else if (indexPath.row == 4){
+        
+        GPUImage_01_Controller *controller = [[GPUImage_01_Controller alloc] init];
+        controller.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:controller animated:YES];
+        
+    }else if (indexPath.row == 5){
+        
+        OpenGLESController *controller = [[OpenGLESController alloc] init];
+        controller.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:controller animated:YES];
     }
 }
 
