@@ -12,6 +12,8 @@
 #import "GPUImage_01_Controller.h"
 #import "OpenGLESController.h"
 #import "GCDController.h"
+#import "myColl-Swift.h"
+
 @interface LLYContactController ()
 @property (nonatomic, strong) NSArray *addDataArray;
 @end
@@ -26,7 +28,7 @@
 -(void)loadData
 {
     
-    _addDataArray = @[@"Block 用法", @"Runtime 使用", @"GCD 使用详解", @"Sockets 使用",@"GPUImage 001", @"OpenGL SE"];
+    _addDataArray = @[@"Block 用法", @"Runtime 使用", @"GCD 使用详解", @"Sockets 使用",@"GPUImage 001", @"OpenGL SE", @"Masonry 使用", @"AFNetworking 使用", @"FMDB 使用", @"无限轮播图",@"二维码"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -100,6 +102,17 @@
         
         OpenGLESController *controller = [[OpenGLESController alloc] init];
         controller.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:controller animated:YES];
+    }else if (indexPath.row == 10){
+        
+  
+        
+//        QRCodeController *controller = [[QRCodeController alloc] initWithNibName:@"QRCodeController" bundle:<#(NSBundle * _Nullable)#>];
+//
+        
+        QRCodeController *controller  = [[UIStoryboard storyboardWithName:@"QRCode" bundle:nil] instantiateViewControllerWithIdentifier:@"QRCode"];
+        controller.hidesBottomBarWhenPushed = YES;
+        
         [self.navigationController pushViewController:controller animated:YES];
     }
 }

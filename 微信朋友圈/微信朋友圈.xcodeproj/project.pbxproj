@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C2D201A76833BCC133A3D21 /* libPods-微信朋友圈.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B7C7A4A6D744E623E6C51C5 /* libPods-微信朋友圈.a */; };
+		103D9C5B9A6E8F99E01FF0EC /* libPods-微信朋友圈.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B7C7A4A6D744E623E6C51C5 /* libPods-微信朋友圈.a */; };
 		DE155D81206E10AE009947C9 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = DE155D7F206E10AE009947C9 /* UIView+Frame.m */; };
+		DE29EA9320A2AE1000A379B9 /* QRCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE29EA9020A2AE0F00A379B9 /* QRCodeController.swift */; };
+		DE29EA9420A2AE1000A379B9 /* QRCodeMyCardViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE29EA9120A2AE1000A379B9 /* QRCodeMyCardViewControl.swift */; };
+		DE29EA9520A2AE1000A379B9 /* QRCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE29EA9220A2AE1000A379B9 /* QRCode.storyboard */; };
+		DE29EA9720A2B2DE00A379B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE29EA9620A2B2DE00A379B9 /* Assets.xcassets */; };
 		DE4D738B207B02EA007819FF /* LLYOperationMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4D738A207B02EA007819FF /* LLYOperationMenuView.m */; };
 		DE4D738E207B0A05007819FF /* UIButton+CustomBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4D738D207B0A05007819FF /* UIButton+CustomBtn.m */; };
 		DE56868C2062296A008B94FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE56868B2062296A008B94FE /* AppDelegate.m */; };
 		DE5686922062296A008B94FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5686902062296A008B94FE /* Main.storyboard */; };
-		DE5686942062296A008B94FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5686932062296A008B94FE /* Assets.xcassets */; };
 		DE5686972062296A008B94FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5686952062296A008B94FE /* LaunchScreen.storyboard */; };
 		DE56869A2062296A008B94FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5686992062296A008B94FE /* main.m */; };
 		DE5686A42062296A008B94FE /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5686A32062296A008B94FE /* _____Tests.m */; };
@@ -78,15 +81,19 @@
 		9390B37A6A0A3D6A4CDF5104 /* Pods-微信朋友圈.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-微信朋友圈.debug.xcconfig"; path = "Pods/Target Support Files/Pods-微信朋友圈/Pods-微信朋友圈.debug.xcconfig"; sourceTree = "<group>"; };
 		DE155D7F206E10AE009947C9 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		DE155D80206E10AE009947C9 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		DE29EA8F20A2AE0E00A379B9 /* 微信朋友圈-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "微信朋友圈-Bridging-Header.h"; sourceTree = "<group>"; };
+		DE29EA9020A2AE0F00A379B9 /* QRCodeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeController.swift; sourceTree = "<group>"; };
+		DE29EA9120A2AE1000A379B9 /* QRCodeMyCardViewControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeMyCardViewControl.swift; sourceTree = "<group>"; };
+		DE29EA9220A2AE1000A379B9 /* QRCode.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QRCode.storyboard; sourceTree = "<group>"; };
+		DE29EA9620A2B2DE00A379B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE4D7389207B02EA007819FF /* LLYOperationMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYOperationMenuView.h; sourceTree = "<group>"; };
 		DE4D738A207B02EA007819FF /* LLYOperationMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYOperationMenuView.m; sourceTree = "<group>"; };
 		DE4D738C207B0A05007819FF /* UIButton+CustomBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+CustomBtn.h"; sourceTree = "<group>"; };
 		DE4D738D207B0A05007819FF /* UIButton+CustomBtn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CustomBtn.m"; sourceTree = "<group>"; };
-		DE5686872062296A008B94FE /* 微信朋友圈.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "微信朋友圈.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE5686872062296A008B94FE /* myColl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myColl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE56868A2062296A008B94FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DE56868B2062296A008B94FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DE5686912062296A008B94FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DE5686932062296A008B94FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE5686962062296A008B94FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE5686982062296A008B94FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE5686992062296A008B94FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -167,7 +174,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C2D201A76833BCC133A3D21 /* libPods-微信朋友圈.a in Frameworks */,
+				103D9C5B9A6E8F99E01FF0EC /* libPods-微信朋友圈.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +229,17 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		DE29EA7D20A2A51D00A379B9 /* 二维码 */ = {
+			isa = PBXGroup;
+			children = (
+				DE29EA9220A2AE1000A379B9 /* QRCode.storyboard */,
+				DE29EA9020A2AE0F00A379B9 /* QRCodeController.swift */,
+				DE29EA9120A2AE1000A379B9 /* QRCodeMyCardViewControl.swift */,
+				DE29EA8F20A2AE0E00A379B9 /* 微信朋友圈-Bridging-Header.h */,
+			);
+			path = "二维码";
+			sourceTree = "<group>";
+		};
 		DE4D7388207B02C2007819FF /* OperationMenuView */ = {
 			isa = PBXGroup;
 			children = (
@@ -246,7 +264,7 @@
 		DE5686882062296A008B94FE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DE5686872062296A008B94FE /* 微信朋友圈.app */,
+				DE5686872062296A008B94FE /* myColl.app */,
 				DE56869F2062296A008B94FE /* 微信朋友圈Tests.xctest */,
 				DE5686AA2062296A008B94FE /* 微信朋友圈UITests.xctest */,
 			);
@@ -260,7 +278,7 @@
 				DE5686FE20624671008B94FE /* ViewController.m */,
 				DE5686BD20622990008B94FE /* Classes */,
 				DE5686902062296A008B94FE /* Main.storyboard */,
-				DE5686932062296A008B94FE /* Assets.xcassets */,
+				DE29EA9620A2B2DE00A379B9 /* Assets.xcassets */,
 				DE5686952062296A008B94FE /* LaunchScreen.storyboard */,
 				DE5686982062296A008B94FE /* Info.plist */,
 				DE5686992062296A008B94FE /* main.m */,
@@ -337,6 +355,7 @@
 			children = (
 				DE5686DA20622C0C008B94FE /* LLYContactController.h */,
 				DE5686DB20622C0C008B94FE /* LLYContactController.m */,
+				DE29EA7D20A2A51D00A379B9 /* 二维码 */,
 				DE600D0F209C59DF00461DF6 /* OpenGL ES */,
 				DE600D0B209C45B700461DF6 /* GPUImage */,
 				DEB78BB12092EF73008DB4F0 /* GCD */,
@@ -596,7 +615,7 @@
 			);
 			name = "微信朋友圈";
 			productName = "微信朋友圈";
-			productReference = DE5686872062296A008B94FE /* 微信朋友圈.app */;
+			productReference = DE5686872062296A008B94FE /* myColl.app */;
 			productType = "com.apple.product-type.application";
 		};
 		DE56869E2062296A008B94FE /* 微信朋友圈Tests */ = {
@@ -646,6 +665,7 @@
 				TargetAttributes = {
 					DE5686862062296A008B94FE = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 					};
 					DE56869E2062296A008B94FE = {
@@ -687,7 +707,6 @@
 			files = (
 				DE5686972062296A008B94FE /* LaunchScreen.storyboard in Resources */,
 				DE5686F220623246008B94FE /* Contact.xcassets in Resources */,
-				DE5686942062296A008B94FE /* Assets.xcassets in Resources */,
 				DE5686F020623237008B94FE /* Discover.xcassets in Resources */,
 				DE5686EC20622FC0008B94FE /* Home.xcassets in Resources */,
 				DE5686F82062333B008B94FE /* Image.xcassets in Resources */,
@@ -695,6 +714,8 @@
 				DEB742852085F9D5004EF510 /* LLYImageBrowseCell.xib in Resources */,
 				DE5686EE20622FD5008B94FE /* Mine.xcassets in Resources */,
 				DE5686FC206240E5008B94FE /* LLYDiscoverController.storyboard in Resources */,
+				DE29EA9520A2AE1000A379B9 /* QRCode.storyboard in Resources */,
+				DE29EA9720A2B2DE00A379B9 /* Assets.xcassets in Resources */,
 				DE5686922062296A008B94FE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -781,6 +802,7 @@
 				DE5686D920622BF5008B94FE /* LLYHomeController.m in Sources */,
 				DEB78BC020931BF3008DB4F0 /* NSString+attribute.m in Sources */,
 				DE6FBD5D207A55AA00334509 /* LLYTimeLineFrameModel.m in Sources */,
+				DE29EA9420A2AE1000A379B9 /* QRCodeMyCardViewControl.swift in Sources */,
 				DEB78BA82092C4AF008DB4F0 /* LLYBlockController.m in Sources */,
 				DE5686FF20624671008B94FE /* ViewController.m in Sources */,
 				DE7D132D207B64CF00FADC6F /* LLYLikeAndCommentView.m in Sources */,
@@ -796,6 +818,7 @@
 				DEB78BB42092F160008DB4F0 /* Person.m in Sources */,
 				DE5686DF20622D0F008B94FE /* LLYTabBarController.m in Sources */,
 				DEA4DDE920A15B1400FCEC01 /* GCDController.m in Sources */,
+				DE29EA9320A2AE1000A379B9 /* QRCodeController.swift in Sources */,
 				DEB78BBD20930DAD008DB4F0 /* NSURL+swizing.m in Sources */,
 				DE5686DC20622C0C008B94FE /* LLYContactController.m in Sources */,
 				DE56868C2062296A008B94FE /* AppDelegate.m in Sources */,
@@ -962,7 +985,9 @@
 			baseConfigurationReference = 9390B37A6A0A3D6A4CDF5104 /* Pods-微信朋友圈.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = D39GTQ96VX;
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
@@ -974,7 +999,11 @@
 				INFOPLIST_FILE = "微信朋友圈/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "liluyang.-----";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_MODULE_NAME = myColl;
+				PRODUCT_NAME = myColl;
+				SWIFT_OBJC_BRIDGING_HEADER = "微信朋友圈/Classes/Contacts/二维码/微信朋友圈-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WARNING_CFLAGS = "-Wno-documentation";
 			};
@@ -985,7 +1014,9 @@
 			baseConfigurationReference = 5951B11BE626826A22749D0A /* Pods-微信朋友圈.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = D39GTQ96VX;
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
@@ -997,7 +1028,10 @@
 				INFOPLIST_FILE = "微信朋友圈/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "liluyang.-----";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_MODULE_NAME = myColl;
+				PRODUCT_NAME = myColl;
+				SWIFT_OBJC_BRIDGING_HEADER = "微信朋友圈/Classes/Contacts/二维码/微信朋友圈-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WARNING_CFLAGS = "-Wno-documentation";
 			};
@@ -1006,6 +1040,7 @@
 		DE5686B72062296A008B94FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D39GTQ96VX;
@@ -1021,6 +1056,7 @@
 		DE5686B82062296A008B94FE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D39GTQ96VX;
@@ -1036,6 +1072,7 @@
 		DE5686BA2062296A008B94FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D39GTQ96VX;
 				INFOPLIST_FILE = "微信朋友圈UITests/Info.plist";
@@ -1050,6 +1087,7 @@
 		DE5686BB2062296A008B94FE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D39GTQ96VX;
 				INFOPLIST_FILE = "微信朋友圈UITests/Info.plist";

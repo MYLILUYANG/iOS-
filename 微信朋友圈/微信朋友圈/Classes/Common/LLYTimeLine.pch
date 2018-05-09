@@ -39,6 +39,8 @@
 
 #import <AFNetworking.h>
 
+#import <GPUImage.h>
+
 #endif
 
 // Include any system framework and library headers here that should be included in all compilation units.
