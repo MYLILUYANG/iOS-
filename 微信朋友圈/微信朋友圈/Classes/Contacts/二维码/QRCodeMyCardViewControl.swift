@@ -11,27 +11,62 @@ import UIKit
 class QRCodeMyCardViewControl: UIViewController {
     //二维码容器
     @IBOutlet weak var customImageView: UIImageView!
-
+    var textField = UITextField();
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI();
 
-     //生成二维码属于滤镜的一种
+
+    }
+
+    func setupUI() -> Void {
+        
+        let button = UIButton(type: .custom);
+        button.frame = CGRect(x: K_Width(width: 120), y: K_Height(height: 100), width: K_Width(width: 100), height: 30);
+        button.layer.cornerRadius = 6;
+        button.layer.masksToBounds = true;
+        button.addTarget(self, action: #selector(showQRCode), for: .touchUpInside);
+        button.setTitle("点击生成", for: .normal);
+        button.backgroundColor = UIColor.red;
+        
+        textField = UITextField(frame: CGRect(x: K_Width(width: 20), y: K_Height(height: 100), width: K_Width(width: 100), height: 30));
+        textField.borderStyle = .roundedRect;
+        textField.placeholder = "请输入您想要生成的内容";
+        view.addSubview(textField);
+        view.addSubview(button);
+        
+    }
+    func showQRCode() -> Void {
+        
+        if (textField.text == ""){
+            print("请您填写内容");
+
+            
+        }else
+        {
+            disPlayFilter();
+        }
+        
+    }
+    
+    func disPlayFilter() -> Void {
+        
+        //生成二维码属于滤镜的一种
         //1、创建滤镜
         let filiter  = CIFilter(name: "CIQRCodeGenerator");
         //还原默认设置
         filiter?.setDefaults()
         //设置生成二维码需要的数据到滤镜中
-        filiter?.setValue("你好！王宝芹，宝宝爱你呦！！！".data(using: String.Encoding.utf8), forKey: "InputMessage")
+        filiter?.setValue(textField.text?.data(using: String.Encoding.utf8), forKey: "InputMessage")
         
         //从滤镜中取出生成好的二维码图片
         guard let ciimage = filiter?.outputImage else {
             return
         }
         self.customImageView.image = creatNonInterpolatedUIImageFormCIImage(image: ciimage, size: 300)
-            
-//            UIImage(ciImage: ciimage)
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

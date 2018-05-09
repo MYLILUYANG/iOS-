@@ -13,6 +13,7 @@
 		DE29EA9420A2AE1000A379B9 /* QRCodeMyCardViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE29EA9120A2AE1000A379B9 /* QRCodeMyCardViewControl.swift */; };
 		DE29EA9520A2AE1000A379B9 /* QRCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE29EA9220A2AE1000A379B9 /* QRCode.storyboard */; };
 		DE29EA9720A2B2DE00A379B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE29EA9620A2B2DE00A379B9 /* Assets.xcassets */; };
+		DE29EA9F20A3052C00A379B9 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE29EA9E20A3052C00A379B9 /* Const.swift */; };
 		DE4D738B207B02EA007819FF /* LLYOperationMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4D738A207B02EA007819FF /* LLYOperationMenuView.m */; };
 		DE4D738E207B0A05007819FF /* UIButton+CustomBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4D738D207B0A05007819FF /* UIButton+CustomBtn.m */; };
 		DE56868C2062296A008B94FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE56868B2062296A008B94FE /* AppDelegate.m */; };
@@ -86,6 +87,7 @@
 		DE29EA9120A2AE1000A379B9 /* QRCodeMyCardViewControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeMyCardViewControl.swift; sourceTree = "<group>"; };
 		DE29EA9220A2AE1000A379B9 /* QRCode.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QRCode.storyboard; sourceTree = "<group>"; };
 		DE29EA9620A2B2DE00A379B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE29EA9E20A3052C00A379B9 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		DE4D7389207B02EA007819FF /* LLYOperationMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYOperationMenuView.h; sourceTree = "<group>"; };
 		DE4D738A207B02EA007819FF /* LLYOperationMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYOperationMenuView.m; sourceTree = "<group>"; };
 		DE4D738C207B0A05007819FF /* UIButton+CustomBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+CustomBtn.h"; sourceTree = "<group>"; };
@@ -334,6 +336,7 @@
 		DE5686BE206229A6008B94FE /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				DE29EA9E20A3052C00A379B9 /* Const.swift */,
 				DEB78BAD2092EBE9008DB4F0 /* MyBlog */,
 				DE5686F9206239A3008B94FE /* GlobalHeader.h */,
 				DE5686FA20623A7F008B94FE /* LLYTimeLine.pch */,
@@ -822,6 +825,7 @@
 				DEB78BBD20930DAD008DB4F0 /* NSURL+swizing.m in Sources */,
 				DE5686DC20622C0C008B94FE /* LLYContactController.m in Sources */,
 				DE56868C2062296A008B94FE /* AppDelegate.m in Sources */,
+				DE29EA9F20A3052C00A379B9 /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
