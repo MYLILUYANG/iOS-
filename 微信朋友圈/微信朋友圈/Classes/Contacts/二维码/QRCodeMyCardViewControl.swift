@@ -22,14 +22,14 @@ class QRCodeMyCardViewControl: UIViewController {
     func setupUI() -> Void {
         
         let button = UIButton(type: .custom);
-        button.frame = CGRect(x: K_Width(width: 120), y: K_Height(height: 100), width: K_Width(width: 100), height: 30);
+        button.frame = CGRect(x: K_Width(width: 250), y: K_Height(height: 100), width: K_Width(width: 100), height: 30);
         button.layer.cornerRadius = 6;
         button.layer.masksToBounds = true;
         button.addTarget(self, action: #selector(showQRCode), for: .touchUpInside);
         button.setTitle("点击生成", for: .normal);
         button.backgroundColor = UIColor.red;
         
-        textField = UITextField(frame: CGRect(x: K_Width(width: 20), y: K_Height(height: 100), width: K_Width(width: 100), height: 30));
+        textField = UITextField(frame: CGRect(x: K_Width(width: 20), y: K_Height(height: 100), width: K_Width(width: 230), height: 30));
         textField.borderStyle = .roundedRect;
         textField.placeholder = "请输入您想要生成的内容";
         view.addSubview(textField);
