@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		103D9C5B9A6E8F99E01FF0EC /* libPods-微信朋友圈.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B7C7A4A6D744E623E6C51C5 /* libPods-微信朋友圈.a */; };
 		DE155D81206E10AE009947C9 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = DE155D7F206E10AE009947C9 /* UIView+Frame.m */; };
+		DE18CB26214947F200CFD227 /* ImageBrowserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE18CB25214947F200CFD227 /* ImageBrowserCell.m */; };
+		DE18CB29214956D500CFD227 /* LayoutImagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE18CB28214956D500CFD227 /* LayoutImagesView.m */; };
 		DE29EA9320A2AE1000A379B9 /* QRCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE29EA9020A2AE0F00A379B9 /* QRCodeController.swift */; };
 		DE29EA9420A2AE1000A379B9 /* QRCodeMyCardViewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE29EA9120A2AE1000A379B9 /* QRCodeMyCardViewControl.swift */; };
 		DE29EA9520A2AE1000A379B9 /* QRCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE29EA9220A2AE1000A379B9 /* QRCode.storyboard */; };
 		DE29EA9720A2B2DE00A379B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE29EA9620A2B2DE00A379B9 /* Assets.xcassets */; };
 		DE29EA9F20A3052C00A379B9 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE29EA9E20A3052C00A379B9 /* Const.swift */; };
+		DE4249D82148038E00908DB1 /* LLYImageBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4249D72148038E00908DB1 /* LLYImageBrowserController.m */; };
 		DE4D738B207B02EA007819FF /* LLYOperationMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4D738A207B02EA007819FF /* LLYOperationMenuView.m */; };
 		DE4D738E207B0A05007819FF /* UIButton+CustomBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4D738D207B0A05007819FF /* UIButton+CustomBtn.m */; };
+		DE5270B020DCDAD900F68262 /* AFController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5270AF20DCDAD900F68262 /* AFController.m */; };
 		DE56868C2062296A008B94FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE56868B2062296A008B94FE /* AppDelegate.m */; };
 		DE5686922062296A008B94FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5686902062296A008B94FE /* Main.storyboard */; };
 		DE5686972062296A008B94FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5686952062296A008B94FE /* LaunchScreen.storyboard */; };
@@ -82,16 +86,24 @@
 		9390B37A6A0A3D6A4CDF5104 /* Pods-微信朋友圈.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-微信朋友圈.debug.xcconfig"; path = "Pods/Target Support Files/Pods-微信朋友圈/Pods-微信朋友圈.debug.xcconfig"; sourceTree = "<group>"; };
 		DE155D7F206E10AE009947C9 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		DE155D80206E10AE009947C9 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		DE18CB24214947F200CFD227 /* ImageBrowserCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageBrowserCell.h; sourceTree = "<group>"; };
+		DE18CB25214947F200CFD227 /* ImageBrowserCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageBrowserCell.m; sourceTree = "<group>"; };
+		DE18CB27214956D500CFD227 /* LayoutImagesView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LayoutImagesView.h; sourceTree = "<group>"; };
+		DE18CB28214956D500CFD227 /* LayoutImagesView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayoutImagesView.m; sourceTree = "<group>"; };
 		DE29EA8F20A2AE0E00A379B9 /* 微信朋友圈-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "微信朋友圈-Bridging-Header.h"; sourceTree = "<group>"; };
 		DE29EA9020A2AE0F00A379B9 /* QRCodeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeController.swift; sourceTree = "<group>"; };
 		DE29EA9120A2AE1000A379B9 /* QRCodeMyCardViewControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeMyCardViewControl.swift; sourceTree = "<group>"; };
 		DE29EA9220A2AE1000A379B9 /* QRCode.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QRCode.storyboard; sourceTree = "<group>"; };
 		DE29EA9620A2B2DE00A379B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE29EA9E20A3052C00A379B9 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		DE4249D62148038E00908DB1 /* LLYImageBrowserController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYImageBrowserController.h; sourceTree = "<group>"; };
+		DE4249D72148038E00908DB1 /* LLYImageBrowserController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYImageBrowserController.m; sourceTree = "<group>"; };
 		DE4D7389207B02EA007819FF /* LLYOperationMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYOperationMenuView.h; sourceTree = "<group>"; };
 		DE4D738A207B02EA007819FF /* LLYOperationMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYOperationMenuView.m; sourceTree = "<group>"; };
 		DE4D738C207B0A05007819FF /* UIButton+CustomBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+CustomBtn.h"; sourceTree = "<group>"; };
 		DE4D738D207B0A05007819FF /* UIButton+CustomBtn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CustomBtn.m"; sourceTree = "<group>"; };
+		DE5270AE20DCDAD900F68262 /* AFController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFController.h; sourceTree = "<group>"; };
+		DE5270AF20DCDAD900F68262 /* AFController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFController.m; sourceTree = "<group>"; };
 		DE5686872062296A008B94FE /* myColl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myColl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE56868A2062296A008B94FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DE56868B2062296A008B94FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -242,6 +254,27 @@
 			path = "二维码";
 			sourceTree = "<group>";
 		};
+		DE4249D52148033F00908DB1 /* LLYImageBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				DE4249D9214806E300908DB1 /* ImageBrowser */,
+				DE4249D62148038E00908DB1 /* LLYImageBrowserController.h */,
+				DE4249D72148038E00908DB1 /* LLYImageBrowserController.m */,
+				DE18CB24214947F200CFD227 /* ImageBrowserCell.h */,
+				DE18CB25214947F200CFD227 /* ImageBrowserCell.m */,
+				DE18CB27214956D500CFD227 /* LayoutImagesView.h */,
+				DE18CB28214956D500CFD227 /* LayoutImagesView.m */,
+			);
+			path = LLYImageBrowser;
+			sourceTree = "<group>";
+		};
+		DE4249D9214806E300908DB1 /* ImageBrowser */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ImageBrowser;
+			sourceTree = "<group>";
+		};
 		DE4D7388207B02C2007819FF /* OperationMenuView */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,6 +282,15 @@
 				DE4D738A207B02EA007819FF /* LLYOperationMenuView.m */,
 			);
 			path = OperationMenuView;
+			sourceTree = "<group>";
+		};
+		DE5270AD20DCDAA600F68262 /* AfnetWorking */ = {
+			isa = PBXGroup;
+			children = (
+				DE5270AE20DCDAD900F68262 /* AFController.h */,
+				DE5270AF20DCDAD900F68262 /* AFController.m */,
+			);
+			path = AfnetWorking;
 			sourceTree = "<group>";
 		};
 		DE56867E2062296A008B94FE = {
@@ -358,6 +400,8 @@
 			children = (
 				DE5686DA20622C0C008B94FE /* LLYContactController.h */,
 				DE5686DB20622C0C008B94FE /* LLYContactController.m */,
+				DE4249D52148033F00908DB1 /* LLYImageBrowser */,
+				DE5270AD20DCDAA600F68262 /* AfnetWorking */,
 				DE29EA7D20A2A51D00A379B9 /* 二维码 */,
 				DE600D0F209C59DF00461DF6 /* OpenGL ES */,
 				DE600D0B209C45B700461DF6 /* GPUImage */,
@@ -792,6 +836,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE600D0E209C45E100461DF6 /* GPUImage_01_Controller.m in Sources */,
+				DE4249D82148038E00908DB1 /* LLYImageBrowserController.m in Sources */,
 				DEB78BB02092EC0E008DB4F0 /* MyBlogController.m in Sources */,
 				DE4D738E207B0A05007819FF /* UIButton+CustomBtn.m in Sources */,
 				DEB742832085F9C1004EF510 /* LLYImageBrowseCell.m in Sources */,
@@ -799,6 +844,7 @@
 				DEA4DDE620A1462700FCEC01 /* NSObject+Category.m in Sources */,
 				DE5686CD20622B6D008B94FE /* LLYBaseNavigationController.m in Sources */,
 				DEB742802085F151004EF510 /* LLYImageBrowse.m in Sources */,
+				DE18CB29214956D500CFD227 /* LayoutImagesView.m in Sources */,
 				DE5686E420622DB9008B94FE /* LLYTimeLineController.m in Sources */,
 				DE5686D620622BE8008B94FE /* LLYMineController.m in Sources */,
 				DE5686D320622BD9008B94FE /* LLYDiscoverController.m in Sources */,
@@ -818,11 +864,13 @@
 				DE56870520624A92008B94FE /* LLYTimeLineCell.m in Sources */,
 				DE155D81206E10AE009947C9 /* UIView+Frame.m in Sources */,
 				DE6FBD60207A625D00334509 /* NSString+TimeOperation.m in Sources */,
+				DE18CB26214947F200CFD227 /* ImageBrowserCell.m in Sources */,
 				DEB78BB42092F160008DB4F0 /* Person.m in Sources */,
 				DE5686DF20622D0F008B94FE /* LLYTabBarController.m in Sources */,
 				DEA4DDE920A15B1400FCEC01 /* GCDController.m in Sources */,
 				DE29EA9320A2AE1000A379B9 /* QRCodeController.swift in Sources */,
 				DEB78BBD20930DAD008DB4F0 /* NSURL+swizing.m in Sources */,
+				DE5270B020DCDAD900F68262 /* AFController.m in Sources */,
 				DE5686DC20622C0C008B94FE /* LLYContactController.m in Sources */,
 				DE56868C2062296A008B94FE /* AppDelegate.m in Sources */,
 				DE29EA9F20A3052C00A379B9 /* Const.swift in Sources */,

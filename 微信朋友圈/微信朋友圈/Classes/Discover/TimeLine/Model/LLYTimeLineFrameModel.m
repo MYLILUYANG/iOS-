@@ -23,7 +23,6 @@
             break;
         case 2:
             _imgBrowseH = K_Width(75) + K_Height(10);
-            
             break;
         case 3:
             _imgBrowseH = K_Width(60);
@@ -43,9 +42,6 @@
         default:
             break;
     }
-    
-    
-    
 }
 
 @end

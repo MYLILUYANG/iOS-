@@ -8,7 +8,7 @@
 
 #import "LLYImageBrowseCell.h"
 @interface LLYImageBrowseCell()
-//@property (nonatomic, strong) UIImageView *browseImage;
+
 @end
 @implementation LLYImageBrowseCell
 

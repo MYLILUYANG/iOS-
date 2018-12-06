@@ -13,7 +13,8 @@
 #import "OpenGLESController.h"
 #import "GCDController.h"
 #import "myColl-Swift.h"
-
+#import "AFController.h"
+#import "LLYImageBrowserController.h"
 @interface LLYContactController ()
 @property (nonatomic, strong) NSArray *addDataArray;
 @end
@@ -28,7 +29,7 @@
 -(void)loadData
 {
     
-    _addDataArray = @[@"Block 用法", @"Runtime 使用", @"GCD 使用详解", @"Sockets 使用",@"GPUImage 001", @"OpenGL SE", @"Masonry 使用", @"AFNetworking 使用", @"FMDB 使用", @"无限轮播图",@"二维码 Swift"];
+    _addDataArray = @[@"Block 用法", @"Runtime 使用", @"GCD 使用详解", @"Sockets 使用",@"GPUImage 001", @"OpenGL SE", @"Masonry 使用", @"AFNetworking 使用", @"FMDB 使用", @"无限轮播图",@"二维码 Swift",@"图片浏览器"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -103,7 +104,11 @@
         OpenGLESController *controller = [[OpenGLESController alloc] init];
         controller.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:controller animated:YES];
-    }else if (indexPath.row == 10){
+    }else if (indexPath.row == 7){
+        AFController *controller = [[AFController alloc] init];
+        [self.navigationController pushViewController:controller animated:YES];
+    }
+    else if (indexPath.row == 10){
         
   
         
@@ -114,6 +119,11 @@
         controller.hidesBottomBarWhenPushed = YES;
         
         [self.navigationController pushViewController:controller animated:YES];
+    }else if ( indexPath.row == 11){
+        LLYImageBrowserController *controller = [[LLYImageBrowserController alloc] init];
+        controller.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:controller animated:YES];
+        
     }
 }
 

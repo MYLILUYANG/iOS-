@@ -23,7 +23,6 @@ static NSString *cellId = @"LLYImageBrowseCellId";
         [self setupView];
     }
     return self;
-    
 }
 
 

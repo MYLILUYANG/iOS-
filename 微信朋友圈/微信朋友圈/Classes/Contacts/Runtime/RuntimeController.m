@@ -231,12 +231,12 @@
 -(void)msgSend
 {
     Person *p = [[Person alloc] init];
+    objc_msgSend(p, @selector(eat:),@"包子");
     
     [p eat:@"玉米"];
     [p performSelector:@selector(eat:) withObject:@"花生"];
 //    方法的调用实质是 objc_msgSend()
-    objc_msgSend(p, @selector(eat:),@"包子");
-    
+//    ((void (*) (id, SEL, NSString *)) (void *)objc_msgSend)(p, sel_registerName("eat", @"asd"));
     
     self.descLabel.text = @"方法的调用实质是消息发送 objc_msgSend()";
 }

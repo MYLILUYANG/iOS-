@@ -8,7 +8,7 @@
 
 #import "LLYImgContainerView.h"
 #import "LLYImageBrowse.h"
-//#defend itemSizeWH K_Width(100)
+
 #define K_ItemWH K_Width(50)
 @interface LLYImgContainerView()
 
@@ -20,7 +20,9 @@
 -(id)initWithThumbnailImgsArray:(NSArray *)thumbnailImgsArray
 {
     if (self = [super init]) {
-//        self.thumbnailImgsArray = thumbnailImgsArray;
+        
+        
+        
         [self setUpView];
     }
     
@@ -39,9 +41,7 @@
 
 -(void)setUpView
 {
-//    self.backgroundColor = [UIColor lightGrayColor];
     _thumbViewsArray = [[NSMutableArray alloc] init];
-//    NSInteger count = _thumbnailImgsArray.count;
     for (int i = 0; i < 9; i++) {
         
         UIImageView *itemView = [[UIImageView alloc] init];
