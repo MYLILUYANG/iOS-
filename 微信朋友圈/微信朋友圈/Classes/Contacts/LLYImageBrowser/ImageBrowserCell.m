@@ -7,6 +7,7 @@
 //
 
 #import "ImageBrowserCell.h"
+#import "LayoutImagesView.h"
 
 @interface ImageBrowserCell()
 {
@@ -19,17 +20,24 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-//    [self setupView];
+
 }
 
 -(void)setupView{
-    self.backgroundColor = [UIColor redColor];
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-    [self.contentView addSubview:label];
-}
--(void)initWithModelArray:(NSArray *)Modelarray
-{
+
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
     
+    
+    
+}
+-(void)setModelArray:(NSArray<NSString *> *)modelArray{
+    _modelArray = modelArray;
+//    布局缩略图
+    LayoutImagesView * thumbnailView = [[LayoutImagesView alloc] init];
+    
+    thumbnailView.largeImgsArray = modelArray;
+    NSLog(@"%.2f",thumbnailView.height);
+    [self.contentView addSubview:thumbnailView];
 }
 -(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -39,11 +47,13 @@
     return self;
 }
 
+-(CGFloat)height{
+    return 100;
+}
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 
-    // Configure the view for the selected state
 }
 
 @end

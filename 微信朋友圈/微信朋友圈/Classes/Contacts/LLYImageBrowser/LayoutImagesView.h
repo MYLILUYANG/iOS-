@@ -17,13 +17,14 @@
  @return self view
  */
 -(id)initWithThumbnailImgsArray:(NSMutableArray *)thumbnailImgsArray;
-
+//缩略图数组
 @property (nonatomic, strong) NSMutableArray *thumbnailImgsArray;
-
+//大图数组
 @property (nonatomic, strong) NSArray *largeImgsArray;
 
 /**
  view 高度
  */
 @property (nonatomic, assign) CGFloat viewHeight;
+
 @end

@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ImageBrowserCell : UITableViewCell
--(void)initWithModelArray:(NSArray *)Modelarray;
 
+-(void)initWithModelArray:(NSArray *)modelArray;
 
+@property (nonatomic, strong) NSArray <NSString *> *modelArray;
 //+(instancetype)loadViewNib;
 @end

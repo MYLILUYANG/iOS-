@@ -123,7 +123,6 @@
         LLYImageBrowserController *controller = [[LLYImageBrowserController alloc] init];
         controller.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:controller animated:YES];
-        
     }
 }
 
