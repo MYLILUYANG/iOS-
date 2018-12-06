@@ -50,6 +50,7 @@
 		DE6FBD5D207A55AA00334509 /* LLYTimeLineFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6FBD5C207A55AA00334509 /* LLYTimeLineFrameModel.m */; };
 		DE6FBD60207A625D00334509 /* NSString+TimeOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6FBD5F207A625D00334509 /* NSString+TimeOperation.m */; };
 		DE7D132D207B64CF00FADC6F /* LLYLikeAndCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7D132C207B64CF00FADC6F /* LLYLikeAndCommentView.m */; };
+		DE899EAC21B9356F00BF0B13 /* LLYImageBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = DE899EAB21B9356F00BF0B13 /* LLYImageBrowser.m */; };
 		DEA4DDE620A1462700FCEC01 /* NSObject+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA4DDE520A1462700FCEC01 /* NSObject+Category.m */; };
 		DEA4DDE920A15B1400FCEC01 /* GCDController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA4DDE820A15B1400FCEC01 /* GCDController.m */; };
 		DEB742802085F151004EF510 /* LLYImageBrowse.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB7427F2085F151004EF510 /* LLYImageBrowse.m */; };
@@ -160,6 +161,8 @@
 		DE6FBD5F207A625D00334509 /* NSString+TimeOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+TimeOperation.m"; sourceTree = "<group>"; };
 		DE7D132B207B64CF00FADC6F /* LLYLikeAndCommentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYLikeAndCommentView.h; sourceTree = "<group>"; };
 		DE7D132C207B64CF00FADC6F /* LLYLikeAndCommentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYLikeAndCommentView.m; sourceTree = "<group>"; };
+		DE899EAA21B9356F00BF0B13 /* LLYImageBrowser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYImageBrowser.h; sourceTree = "<group>"; };
+		DE899EAB21B9356F00BF0B13 /* LLYImageBrowser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYImageBrowser.m; sourceTree = "<group>"; };
 		DEA4DDE420A1462700FCEC01 /* NSObject+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Category.h"; sourceTree = "<group>"; };
 		DEA4DDE520A1462700FCEC01 /* NSObject+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Category.m"; sourceTree = "<group>"; };
 		DEA4DDE720A15B1400FCEC01 /* GCDController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDController.h; sourceTree = "<group>"; };
@@ -257,7 +260,7 @@
 		DE4249D52148033F00908DB1 /* LLYImageBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				DE4249D9214806E300908DB1 /* ImageBrowser */,
+				DE4249D9214806E300908DB1 /* LLYImageBrowser */,
 				DE4249D62148038E00908DB1 /* LLYImageBrowserController.h */,
 				DE4249D72148038E00908DB1 /* LLYImageBrowserController.m */,
 				DE18CB24214947F200CFD227 /* ImageBrowserCell.h */,
@@ -268,11 +271,13 @@
 			path = LLYImageBrowser;
 			sourceTree = "<group>";
 		};
-		DE4249D9214806E300908DB1 /* ImageBrowser */ = {
+		DE4249D9214806E300908DB1 /* LLYImageBrowser */ = {
 			isa = PBXGroup;
 			children = (
+				DE899EAA21B9356F00BF0B13 /* LLYImageBrowser.h */,
+				DE899EAB21B9356F00BF0B13 /* LLYImageBrowser.m */,
 			);
-			path = ImageBrowser;
+			path = LLYImageBrowser;
 			sourceTree = "<group>";
 		};
 		DE4D7388207B02C2007819FF /* OperationMenuView */ = {
@@ -847,6 +852,7 @@
 				DE18CB29214956D500CFD227 /* LayoutImagesView.m in Sources */,
 				DE5686E420622DB9008B94FE /* LLYTimeLineController.m in Sources */,
 				DE5686D620622BE8008B94FE /* LLYMineController.m in Sources */,
+				DE899EAC21B9356F00BF0B13 /* LLYImageBrowser.m in Sources */,
 				DE5686D320622BD9008B94FE /* LLYDiscoverController.m in Sources */,
 				DE5686D920622BF5008B94FE /* LLYHomeController.m in Sources */,
 				DEB78BC020931BF3008DB4F0 /* NSString+attribute.m in Sources */,
