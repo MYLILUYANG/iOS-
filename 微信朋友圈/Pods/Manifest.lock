@@ -23,6 +23,9 @@ PODS:
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
+  - SDWebImage/GIF (4.0.0):
+    - FLAnimatedImage (~> 1.0)
+    - SDWebImage/Core
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
@@ -33,6 +36,7 @@ DEPENDENCIES:
   - MBProgressHUD (~> 1.0.0)
   - SDAutoLayout (~> 2.1.7)
   - SDWebImage (~> 4.0.0)
+  - SDWebImage/GIF
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -55,6 +59,6 @@ SPEC CHECKSUMS:
   SDAutoLayout: e9b36d04b8c0b504762a04d76fbbe5108944297a
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
 
-PODFILE CHECKSUM: 408fb5e40b213942082e4345c008659b9b9203f5
+PODFILE CHECKSUM: 93e78c079c3599b5d416ae5e86c3b2ceeddbd56e
 
 COCOAPODS: 1.5.0

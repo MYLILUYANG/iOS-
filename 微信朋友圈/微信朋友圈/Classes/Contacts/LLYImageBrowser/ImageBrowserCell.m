@@ -11,12 +11,10 @@
 
 @interface ImageBrowserCell()
 {
-    UICollectionView *_collectionView;
+    
 }
 @end
 @implementation ImageBrowserCell
-
-
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -26,17 +24,12 @@
 -(void)setupView{
 
     self.selectionStyle = UITableViewCellSelectionStyleNone;
-    
-    
-    
 }
 -(void)setModelArray:(NSArray<NSString *> *)modelArray{
     _modelArray = modelArray;
 //    布局缩略图
     LayoutImagesView * thumbnailView = [[LayoutImagesView alloc] init];
-    
     thumbnailView.largeImgsArray = modelArray;
-    NSLog(@"%.2f",thumbnailView.height);
     [self.contentView addSubview:thumbnailView];
 }
 -(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier

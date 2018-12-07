@@ -8,7 +8,7 @@
 
 #import "LayoutImagesView.h"
 #import <FLAnimatedImage.h>
-
+#import "LLYImageBrowser.h"
 
 
 @interface LayoutImagesView()
@@ -27,16 +27,6 @@
     self.frame = CGRectMake(K_Width(50), 0, K_ScreenW - K_Width(100), 300);
     
     [self.subviews enumerateObjectsUsingBlock:^(__kindof UIView * imageView, NSUInteger idx, BOOL * _Nonnull stop) {
-        
-//#define K_ITEM_W K_Width(60)
-//#define K_ITEM_H K_ITEM_W
-//
-//#define K_ITEM_MARGIN K_Width(5)
-//        //如果图片张数大于3张  col 为 3
-//#define K_ITEM_COL_COUNT 3
-//        //图片数量为2张时 col 为2
-//#define K_ITEM_COL_COUNT2 2
-        
         CGFloat item_W, item_H;
         CGFloat item_Margin = 5;
         NSInteger item_col;
@@ -66,7 +56,7 @@
         imageView.frame = CGRectMake(point.x, point.y, item_W, item_H);
         
         self.viewHeight = CGRectGetMaxY(imageView.frame);
-        NSLog(@"self.viewHeight = %.2f",self.viewHeight);
+//        NSLog(@"self.viewHeight = %.2f",self.viewHeight);
     }];
 }
 
@@ -122,18 +112,13 @@
     [self setupThumbViewWithArray:thumbnailImgsArray];
 }
 
-
-
 -(void)tapAction:(UITapGestureRecognizer *)tap{
-//
-//    NSLog(@"%@",tap);
-    FLAnimatedImageView *view = (FLAnimatedImageView *)tap.view;
-//    NSLog(@"view.tag  = %ld",(long)view.tag);
-    
-    
-    
-    
-    
+    FLAnimatedImageView *showImageView = (FLAnimatedImageView *)tap.view;
+    LLYImageBrowser *browserView = [[LLYImageBrowser alloc] init];
+    browserView.imagesArray = _largeImgsArray;
+    browserView.currentImageIndex = showImageView.tag;
+    browserView.imageCount = _largeImgsArray.count;
+    [browserView show];
 }
 
 @end

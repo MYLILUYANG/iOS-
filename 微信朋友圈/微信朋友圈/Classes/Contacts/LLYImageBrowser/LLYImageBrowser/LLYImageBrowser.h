@@ -8,10 +8,34 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LLYImageBrowser : UIView
+@protocol LLYImageBrowserDelegate<NSObject>
+-(UIImage *)image;
 
+@end
+
+
+@interface LLYImageBrowser : UIView <UIScrollViewDelegate>
+
+
+
+//@property (nonatomic, strong) NSArray<NSString *> *imagesArray;
+
+/**
+ 图片总数
+ */
+@property (nonatomic, assign) NSInteger imageCount;
+/**
+ 从第几张图片开始展示，默认第一张
+ */
+@property (nonatomic, assign) NSInteger currentImageIndex;
+
+/**
+ 大图图片的数组
+ */
 @property (nonatomic, strong) NSArray<NSString *> *imagesArray;
 
 -(void)show;
+
+@property (nonatomic, copy) id<LLYImageBrowserDelegate> delegate;
 
 @end

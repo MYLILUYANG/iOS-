@@ -2,6 +2,7 @@ platform :ios, '8.0'
 def pods
     pod 'FLAnimatedImage', '~> 1.0.12'
     pod 'GPUImage', '~> 0.1.7'
+    pod 'SDWebImage/GIF'
     pod 'SDWebImage', '~> 4.0.0'
     pod 'SDAutoLayout', '~> 2.1.7'  	
     pod 'Masonry', '~> 1.0.2'
