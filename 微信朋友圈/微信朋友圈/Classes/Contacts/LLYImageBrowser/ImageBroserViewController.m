@@ -1,28 +1,23 @@
 //
-//  LLYImageBrowserController.m
+//  TestViewController.m
 //  微信朋友圈
 //
-//  Created by liluyang on 2018/9/11.
+//  Created by liluyang on 2018/12/10.
 //  Copyright © 2018年 liluyang. All rights reserved.
 //
 
-#import "LLYImageBrowserController.h"
+#import "ImageBroserViewController.h"
 #import "ImageBrowserCell.h"
-@interface LLYImageBrowserController ()
+@interface ImageBroserViewController ()
+
 @property (nonatomic, strong) NSArray<NSString *> *imagesArray;
 @end
 
-@implementation LLYImageBrowserController
+@implementation ImageBroserViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    self.view.backgroundColor = [UIColor whiteColor];
-//    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"test"]];
-//    imageView.frame = CGRectMake(20, 100, 300, 200);
-//    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction:)];
-//    [imageView addGestureRecognizer:tap];
-//    imageView.userInteractionEnabled = YES;
-//    [self.view addSubview:imageView];
+    
     _imagesArray = @[@"http://ww2.sinaimg.cn/bmiddle/9ecab84ejw1emgd5nd6eaj20c80c8q4a.jpg",
                      @"http://ww2.sinaimg.cn/bmiddle/642beb18gw1ep3629gfm0g206o050b2a.gif",
                      @"http://ww4.sinaimg.cn/bmiddle/9e9cb0c9jw1ep7nlyu8waj20c80kptae.jpg",
@@ -66,7 +61,6 @@
 {
     
 }
-
 
 
 @end

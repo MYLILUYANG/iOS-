@@ -14,7 +14,7 @@
 #import "GCDController.h"
 #import "myColl-Swift.h"
 #import "AFController.h"
-#import "LLYImageBrowserController.h"
+#import "ImageBroserViewController.h"
 @interface LLYContactController ()
 @property (nonatomic, strong) NSArray *addDataArray;
 @end
@@ -120,7 +120,7 @@
         
         [self.navigationController pushViewController:controller animated:YES];
     }else if ( indexPath.row == 11){
-        LLYImageBrowserController *controller = [[LLYImageBrowserController alloc] init];
+        ImageBroserViewController *controller = [[ImageBroserViewController alloc] init];
         controller.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:controller animated:YES];
     }

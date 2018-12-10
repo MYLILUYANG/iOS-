@@ -8,7 +8,7 @@
 
 #import "LayoutImagesView.h"
 #import <FLAnimatedImage.h>
-#import "LLYImageBrowser.h"
+#import "LLYimageBrowserController.h"
 
 
 @interface LayoutImagesView()
@@ -114,11 +114,17 @@
 
 -(void)tapAction:(UITapGestureRecognizer *)tap{
     FLAnimatedImageView *showImageView = (FLAnimatedImageView *)tap.view;
-    LLYImageBrowser *browserView = [[LLYImageBrowser alloc] init];
-    browserView.imagesArray = _largeImgsArray;
-    browserView.currentImageIndex = showImageView.tag;
-    browserView.imageCount = _largeImgsArray.count;
-    [browserView show];
+    
+//    LLYImageBrowser *browserView = [[LLYImageBrowser alloc] init];
+//    browserView.imagesArray = _largeImgsArray;
+//    browserView.currentImageIndex = showImageView.tag;
+//    browserView.imageCount = _largeImgsArray.count;
+//    [browserView show];
+    
+    LLYimageBrowserController * controller = [[LLYimageBrowserController alloc] init];
+    
+    
+    [controller show];
 }
 
 @end
