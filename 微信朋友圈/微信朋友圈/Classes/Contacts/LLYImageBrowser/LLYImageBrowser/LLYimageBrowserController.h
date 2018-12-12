@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "LLYImageModel.h"
 @interface LLYimageBrowserController : UIViewController
 
-@property (nonatomic, strong) NSArray *imgModelArray;
+@property (nonatomic, strong) NSArray <LLYImageModel*> *imgModelArray;
+
+@property (nonatomic, assign) NSInteger currentIndex;
 
 -(void)show;
 

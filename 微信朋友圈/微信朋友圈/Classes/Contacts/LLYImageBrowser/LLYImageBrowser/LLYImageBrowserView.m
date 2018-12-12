@@ -7,12 +7,15 @@
 //
 
 #import "LLYImageBrowserView.h"
-
+#import "LLYImageModel.h"
 #import "LLYImageBrowserViewCell.h"
 
-@interface LLYImageBrowserView()
+static NSString *LLYImageBrowserViewCellIdentifier = @"LLYImageBrowserViewCellIdentifier";
+
+@interface LLYImageBrowserView()<LLYImageBrowserViewDelegate>
 
 @end
+
 @implementation LLYImageBrowserView
 
 
@@ -24,21 +27,14 @@
 }
 
 
--(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-{
-    [super touchesBegan:touches withEvent:event];
-    printf(__func__);
-    if (_imageBrowsDelegate && [_imageBrowsDelegate respondsToSelector:@selector(didCliclDisMiss:)]) {
-        
-        [_imageBrowsDelegate didCliclDisMiss:self];
-    }
-}
+
+
+
 
 -(void)setupViews
 {
     self.backgroundColor = [UIColor grayColor];
-    
-    [self registerClass:[LLYImageBrowserViewCell class] forCellWithReuseIdentifier:@"itemId"];
+    [self registerClass:[LLYImageBrowserViewCell class] forCellWithReuseIdentifier:LLYImageBrowserViewCellIdentifier];
     self.frame = CGRectMake(0, 0, K_ScreenW, K_ScreenH);
     self.pagingEnabled = YES;
     self.showsVerticalScrollIndicator = false;
@@ -46,34 +42,66 @@
     self.delegate = self;
     self.dataSource = self;
     self.alwaysBounceVertical = NO;
+    
 }
 
--(NSInteger)numberOfSections
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [super touchesBegan:touches withEvent:event];
+    printf(__func__);
+    
+}
+
+#pragma mark - UICollectionViewDelegate
+
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"%s",__func__);
+    if (_imageBrowsDelegate && [_imageBrowsDelegate respondsToSelector:@selector(didCliclDisMiss:)]) {
+        [_imageBrowsDelegate didCliclDisMiss:self];
+    }
+}
+
+
+
+
+#pragma mark - UICollectionViewDataSource
+
+-(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
     return 1;
 }
 
+- (NSInteger)collectionView:(nonnull UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    
+    if (_imageBrowsDataSource && [_imageBrowsDataSource respondsToSelector:@selector(imageBrowserView:numberOfItenInSection:)]) {
+        return [_imageBrowsDataSource imageBrowserView:self numberOfItenInSection:section];
+    }
+    return 0;
+}
+
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    LLYImageBrowserViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"itemId" forIndexPath:indexPath];
     
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    LLYImageBrowserViewCell *cell = (LLYImageBrowserViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:LLYImageBrowserViewCellIdentifier forIndexPath:indexPath];
     
-    label.text = @"lllllaaaaaabbbbeeeeelll";
-    label.backgroundColor = [UIColor grayColor];
-    [cell.contentView addSubview: label];
+ 
+    cell.scrollViewDidClick = ^{
+        
+        if (_imageBrowsDelegate && [_imageBrowsDelegate respondsToSelector:@selector(didCliclDisMiss:)]) {
+            [_imageBrowsDelegate didCliclDisMiss:self];
+        }
+        
+    };
     
-    //    cell.backgroundColor = [UIColor redColor];
-    
+    if (_imageBrowsDataSource && [_imageBrowsDataSource respondsToSelector:@selector(imageBrowserView:cellForItemAtIndexPath:)]) {
+        cell.imageModel = [_imageBrowsDataSource imageBrowserView:self cellForItemAtIndexPath:indexPath];
+        
+    }else{
+        cell.imageModel = nil;
+    }
     return cell;
-    
-    
 }
-
-- (NSInteger)collectionView:(nonnull UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 2;
-}
-
 
 
 @end

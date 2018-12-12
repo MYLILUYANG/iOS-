@@ -16,7 +16,13 @@
 -(void)setURLWithDownloadAdvance:(NSURL *)url
 {
     _url = url;
-    [self downloadImagProgress:nil success:nil faile:nil];
+    
+//    [self downloadImagProgress:nil success:nil faile:nil];
+}
+
+-(void)setUrl:(NSURL *)url
+{
+    _url = url;
 }
 
 -(void)dealloc{

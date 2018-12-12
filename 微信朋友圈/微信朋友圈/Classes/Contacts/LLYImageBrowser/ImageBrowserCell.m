@@ -10,9 +10,8 @@
 #import "LayoutImagesView.h"
 
 @interface ImageBrowserCell()
-{
-    
-}
+
+
 @end
 @implementation ImageBrowserCell
 
@@ -25,11 +24,15 @@
 
     self.selectionStyle = UITableViewCellSelectionStyleNone;
 }
--(void)setModelArray:(NSArray<NSString *> *)modelArray{
+-(void)setModelArray:(NSArray<LLYImageModel *> *)modelArray{
     _modelArray = modelArray;
 //    布局缩略图
     LayoutImagesView * thumbnailView = [[LayoutImagesView alloc] init];
     thumbnailView.largeImgsArray = modelArray;
+    thumbnailView.viewHeight = ^(CGFloat height) {
+        NSLog(@"%.2f",height);
+        self.cellHeight = height;
+    };
     [self.contentView addSubview:thumbnailView];
 }
 -(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
@@ -40,8 +43,9 @@
     return self;
 }
 
--(CGFloat)height{
-    return 100;
+-(CGFloat)cellHeight
+{
+    return self.cellHeight;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

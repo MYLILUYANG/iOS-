@@ -25,6 +25,6 @@
 /**
  view 高度
  */
-@property (nonatomic, assign) CGFloat viewHeight;
+@property (nonatomic, strong) void (^viewHeight)(CGFloat height);
 
 @end

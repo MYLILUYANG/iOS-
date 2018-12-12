@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@class LLYImageModel;
+@class LLYImageBrowserViewCell;
+
+//void (^scrollViewDidClick) (LLYImageBrowserViewCell *);
+
 @interface LLYImageBrowserViewCell : UICollectionViewCell
+
+@property (nonatomic, strong) LLYImageModel *imageModel;
+
+@property (nonatomic, strong) void (^scrollViewDidClick)(void);
 
 @end

@@ -44,7 +44,6 @@
 		DE56870820624AAB008B94FE /* LLYTimeLineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DE56870720624AAB008B94FE /* LLYTimeLineModel.m */; };
 		DE600D0E209C45E100461DF6 /* GPUImage_01_Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = DE600D0D209C45E100461DF6 /* GPUImage_01_Controller.m */; };
 		DE600D12209C59F600461DF6 /* OpenGLESController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE600D11209C59F600461DF6 /* OpenGLESController.m */; };
-		DE60994020720A420041A0D1 /* Discover.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE60993F20720A420041A0D1 /* Discover.xcassets */; };
 		DE609943207384BB0041A0D1 /* LLYImgContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE609942207384BB0041A0D1 /* LLYImgContainerView.m */; };
 		DE631B9A21BE1651007E0E69 /* LLYImageBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE631B9921BE1651007E0E69 /* LLYImageBrowserView.m */; };
 		DE631B9D21BE1666007E0E69 /* LLYimageBrowserController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE631B9C21BE1666007E0E69 /* LLYimageBrowserController.m */; };
@@ -154,7 +153,6 @@
 		DE600D0D209C45E100461DF6 /* GPUImage_01_Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPUImage_01_Controller.m; sourceTree = "<group>"; };
 		DE600D10209C59F600461DF6 /* OpenGLESController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGLESController.h; sourceTree = "<group>"; };
 		DE600D11209C59F600461DF6 /* OpenGLESController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGLESController.m; sourceTree = "<group>"; };
-		DE60993F20720A420041A0D1 /* Discover.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Discover.xcassets; sourceTree = "<group>"; };
 		DE609941207384BB0041A0D1 /* LLYImgContainerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYImgContainerView.h; sourceTree = "<group>"; };
 		DE609942207384BB0041A0D1 /* LLYImgContainerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYImgContainerView.m; sourceTree = "<group>"; };
 		DE631B9821BE1651007E0E69 /* LLYImageBrowserView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYImageBrowserView.h; sourceTree = "<group>"; };
@@ -584,7 +582,6 @@
 		DE60993E20720A170041A0D1 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				DE60993F20720A420041A0D1 /* Discover.xcassets */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -782,7 +779,6 @@
 				DE5686F020623237008B94FE /* Discover.xcassets in Resources */,
 				DE5686EC20622FC0008B94FE /* Home.xcassets in Resources */,
 				DE5686F82062333B008B94FE /* Image.xcassets in Resources */,
-				DE60994020720A420041A0D1 /* Discover.xcassets in Resources */,
 				DEB742852085F9D5004EF510 /* LLYImageBrowseCell.xib in Resources */,
 				DE5686EE20622FD5008B94FE /* Mine.xcassets in Resources */,
 				DE5686FC206240E5008B94FE /* LLYDiscoverController.storyboard in Resources */,

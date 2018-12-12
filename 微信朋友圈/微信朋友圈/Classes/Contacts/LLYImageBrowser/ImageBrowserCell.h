@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "LLYImageBrowser/LLYImageModel.h"
 @interface ImageBrowserCell : UITableViewCell
 
 -(void)initWithModelArray:(NSArray *)modelArray;
 
-@property (nonatomic, strong) NSArray <NSString *> *modelArray;
+@property (nonatomic, strong) NSArray <LLYImageModel *> *modelArray;
 //+(instancetype)loadViewNib;
+
+@property (nonatomic, assign) CGFloat cellHeight;
+
 @end

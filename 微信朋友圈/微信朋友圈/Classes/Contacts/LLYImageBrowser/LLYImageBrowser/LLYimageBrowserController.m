@@ -10,7 +10,7 @@
 #import "LLYImageBrowserView.h"
 #import "LLYImageBrowserLayout.h"
 
-@interface LLYimageBrowserController ()<LLYImageBrowserViewDelegate>
+@interface LLYimageBrowserController ()<LLYImageBrowserViewDelegate,LLYImageBrowserViewDataSource>
 @property (nonatomic, strong) LLYImageBrowserView *browserView;
 @end
 
@@ -19,7 +19,15 @@
 -(void)viewDidLoad
 {
     [super viewDidLoad];
+}
+
+-(void)viewWillLayoutSubviews
+{
+    [super viewWillLayoutSubviews];
     
+    [self.browserView layoutIfNeeded];
+    
+    [self.browserView scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:_currentIndex inSection:0] atScrollPosition:UICollectionViewScrollPositionNone animated:YES];
 }
 
 -(void)viewDidAppear:(BOOL)animated
@@ -28,20 +36,32 @@
     [self.view addSubview:self.browserView];
 }
 
+#pragma -LLYImageBrowserViewDataSource
+
+-(NSInteger)imageBrowserView:(LLYImageBrowserView *)imageBrowserView numberOfItenInSection:(NSInteger)section
+{
+    return self.imgModelArray.count;
+}
+
+-(LLYImageModel *)imageBrowserView:(LLYImageBrowserView *)imageBrowserView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    return self.imgModelArray[indexPath.row];
+}
+
+#pragma -LLYImageBrowserViewDelegate
+
+-(void)didCliclDisMiss:(LLYImageBrowserView *)view
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 -(void)show
 {
     id controller = [[UIApplication sharedApplication] keyWindow].subviews[0].nextResponder;
-    
-    NSLog(@"%@",controller);
     if ([controller isKindOfClass:[UIViewController class]]) {
         [controller presentViewController:self animated:YES completion:nil];
     }
-    
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    
 }
 
 -(LLYImageBrowserView *)browserView
@@ -49,15 +69,10 @@
     if (!_browserView) {
         _browserView = [[LLYImageBrowserView alloc] initWithFrame:CGRectZero collectionViewLayout:[LLYImageBrowserLayout new]];
         _browserView.imageBrowsDelegate = self;
-        
+        _browserView.imageBrowsDataSource = self;
+        _browserView.currentIndex = 0;
     }
     return _browserView;
-}
-
-
-- (void)didCliclDisMiss:(LLYImageBrowserView *)view
-{
-    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 
