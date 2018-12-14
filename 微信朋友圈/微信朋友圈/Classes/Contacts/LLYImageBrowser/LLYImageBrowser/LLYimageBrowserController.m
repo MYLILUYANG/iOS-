@@ -36,6 +36,10 @@
     [self.view addSubview:self.browserView];
 }
 
+- (BOOL)prefersStatusBarHidden {
+    return YES;
+}
+
 #pragma -LLYImageBrowserViewDataSource
 
 -(NSInteger)imageBrowserView:(LLYImageBrowserView *)imageBrowserView numberOfItenInSection:(NSInteger)section
@@ -74,6 +78,7 @@
     }
     return _browserView;
 }
+
 
 
 @end

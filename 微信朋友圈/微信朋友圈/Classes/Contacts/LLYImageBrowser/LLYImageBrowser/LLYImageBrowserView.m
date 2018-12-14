@@ -26,11 +26,6 @@ static NSString *LLYImageBrowserViewCellIdentifier = @"LLYImageBrowserViewCellId
     return self;
 }
 
-
-
-
-
-
 -(void)setupViews
 {
     self.backgroundColor = [UIColor grayColor];
@@ -85,8 +80,8 @@ static NSString *LLYImageBrowserViewCellIdentifier = @"LLYImageBrowserViewCellId
     
     LLYImageBrowserViewCell *cell = (LLYImageBrowserViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:LLYImageBrowserViewCellIdentifier forIndexPath:indexPath];
     
- 
-    cell.scrollViewDidClick = ^{
+    
+    cell.signalTapAction = ^{
         
         if (_imageBrowsDelegate && [_imageBrowsDelegate respondsToSelector:@selector(didCliclDisMiss:)]) {
             [_imageBrowsDelegate didCliclDisMiss:self];

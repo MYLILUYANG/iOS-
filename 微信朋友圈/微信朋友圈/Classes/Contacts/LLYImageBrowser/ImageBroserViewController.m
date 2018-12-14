@@ -49,8 +49,7 @@
     _imagesArray3 = @[model1,model2,model3,model4,];
     _imagesArray4 = @[model1,model2,model3,model4,model5];
     
-    NSDictionary *dict = @{@"key0":self.imagesArray0,@"key1":self.imagesArray1,@"key2":self.imagesArray2,@"key3":self.imagesArray3,@"key4":self.imagesArray4};
-    _dict = dict;
+    _dict = @{@"key":@[_imagesArray0, _imagesArray1,_imagesArray2,_imagesArray3,_imagesArray4]};
 
     [self.tableView registerClass:[ImageBrowserCell class] forCellReuseIdentifier:@"cellImageBrowserId"];
 }
@@ -61,7 +60,9 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return self.dict.count;
+    NSArray *itemArray = self.dict[@"key"];
+    
+    return itemArray.count;
 }
 
 
@@ -71,25 +72,15 @@
     if (!cell) {
         cell = [[ImageBrowserCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cellImageBrowserId"];
     }
-    NSArray *keys = self.dict.allKeys;
-    cell.modelArray = self.dict[keys[indexPath.row]];
-    
+
+    cell.modelArray = self.dict[@"key"][indexPath.row];
     
     return cell;
 }
 
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(nonnull NSIndexPath *)indexPath
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    ImageBrowserCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    NSLog(@"%.2f",cell.cellHeight);
     return 150;
-    
 }
-
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    NSLog(@"__func  =========== %s",__func__);
-}
-
 
 @end

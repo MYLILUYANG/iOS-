@@ -21,7 +21,7 @@
 -(void)layoutSubviews
 {
     [super layoutSubviews];
-    self.backgroundColor = K_RandColor;
+//    self.backgroundColor = K_RandColor;
     self.userInteractionEnabled = true;
     __block CGFloat viewHeight;
     [self.subviews enumerateObjectsUsingBlock:^(__kindof UIView * imageView, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -46,7 +46,8 @@
             item_col = 3;
             item_H = K_Height(60);
             item_W = K_Width(60);
-            viewHeight = K_Height(65) * ( idx % item_col);
+            viewHeight = K_Height(65) * ( idx / item_col) + K_Height(65);
+//            NSLog(@"( idx / item_col) = %lu",idx / item_col);
         }
         
         NSInteger row = idx % item_col;
@@ -59,7 +60,7 @@
 
     }];
   
-    NSLog(@"viewHeight = %.2f",viewHeight);
+//    NSLog(@"viewHeight = %.2f",viewHeight);
     
     self.frame = CGRectMake(K_Width(50), 0, K_ScreenW - K_Width(100), viewHeight);
     self.viewHeight(viewHeight);

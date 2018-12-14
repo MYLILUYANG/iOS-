@@ -30,8 +30,9 @@
     LayoutImagesView * thumbnailView = [[LayoutImagesView alloc] init];
     thumbnailView.largeImgsArray = modelArray;
     thumbnailView.viewHeight = ^(CGFloat height) {
-        NSLog(@"%.2f",height);
+        NSLog(@"cellHeight = %.2f",height);
         self.cellHeight = height;
+        
     };
     [self.contentView addSubview:thumbnailView];
 }
@@ -43,10 +44,10 @@
     return self;
 }
 
--(CGFloat)cellHeight
-{
-    return self.cellHeight;
-}
+//-(CGFloat)cellHeight
+//{
+//    return self.cellHeight;
+//}
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];

@@ -17,6 +17,6 @@
 
 @property (nonatomic, strong) LLYImageModel *imageModel;
 
-@property (nonatomic, strong) void (^scrollViewDidClick)(void);
+@property (nonatomic, strong) void (^signalTapAction)(void);
 
 @end
