@@ -37,7 +37,6 @@ static NSString *LLYImageBrowserViewCellIdentifier = @"LLYImageBrowserViewCellId
     self.delegate = self;
     self.dataSource = self;
     self.alwaysBounceVertical = NO;
-    
 }
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
@@ -56,10 +55,6 @@ static NSString *LLYImageBrowserViewCellIdentifier = @"LLYImageBrowserViewCellId
         [_imageBrowsDelegate didCliclDisMiss:self];
     }
 }
-
-
-
-
 #pragma mark - UICollectionViewDataSource
 
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
@@ -77,26 +72,19 @@ static NSString *LLYImageBrowserViewCellIdentifier = @"LLYImageBrowserViewCellId
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    
     LLYImageBrowserViewCell *cell = (LLYImageBrowserViewCell *)[collectionView dequeueReusableCellWithReuseIdentifier:LLYImageBrowserViewCellIdentifier forIndexPath:indexPath];
     
-    
     cell.signalTapAction = ^{
-        
         if (_imageBrowsDelegate && [_imageBrowsDelegate respondsToSelector:@selector(didCliclDisMiss:)]) {
             [_imageBrowsDelegate didCliclDisMiss:self];
         }
-        
     };
     
     if (_imageBrowsDataSource && [_imageBrowsDataSource respondsToSelector:@selector(imageBrowserView:cellForItemAtIndexPath:)]) {
         cell.imageModel = [_imageBrowsDataSource imageBrowserView:self cellForItemAtIndexPath:indexPath];
-        
     }else{
         cell.imageModel = nil;
     }
     return cell;
 }
-
-
 @end

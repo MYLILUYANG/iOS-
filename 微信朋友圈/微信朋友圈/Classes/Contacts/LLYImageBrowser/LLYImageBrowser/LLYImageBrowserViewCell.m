@@ -267,6 +267,8 @@
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
     //    [self dragAnimation_respondsToScrollViewPanGesture];
+    NSLog(@"x  scroll %@",scrollView);
+    
 }
 //- (void)dragAnimation_respondsToScrollViewPanGesture {
 //    if (self.cancelDragImageViewAnimation || isZooming) return;

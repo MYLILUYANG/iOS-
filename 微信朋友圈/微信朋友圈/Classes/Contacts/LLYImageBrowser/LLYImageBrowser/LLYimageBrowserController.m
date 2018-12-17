@@ -78,7 +78,4 @@
     }
     return _browserView;
 }
-
-
-
 @end
