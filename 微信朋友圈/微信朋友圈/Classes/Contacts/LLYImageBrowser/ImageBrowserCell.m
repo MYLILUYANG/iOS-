@@ -17,13 +17,15 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-
 }
+
 
 -(void)setupView{
 
     self.selectionStyle = UITableViewCellSelectionStyleNone;
 }
+
+
 -(void)setModelArray:(NSArray<LLYImageModel *> *)modelArray{
     _modelArray = modelArray;
 //    布局缩略图
@@ -36,6 +38,8 @@
     };
     [self.contentView addSubview:thumbnailView];
 }
+
+
 -(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
@@ -44,14 +48,9 @@
     return self;
 }
 
-//-(CGFloat)cellHeight
-//{
-//    return self.cellHeight;
-//}
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-
 }
 
 @end

@@ -6,6 +6,8 @@
 //  Copyright © 2018年 liluyang. All rights reserved.
 //
 
+
+
 #ifndef GlobalHeader_h
 #define GlobalHeader_h
 
@@ -30,3 +32,6 @@
 #define K_OptionMenuViewNotification @"K_OptionMenuViewDidClickedNotification"
 
 #endif /* GlobalHeader_h */
+
+//typedef en <#new#>;
+

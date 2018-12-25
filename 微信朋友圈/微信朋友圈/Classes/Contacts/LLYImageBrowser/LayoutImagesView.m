@@ -121,8 +121,6 @@
 
 -(void)tapAction:(UITapGestureRecognizer *)tap{
     FLAnimatedImageView *showImageView = (FLAnimatedImageView *)tap.view;
- 
-    
     LLYimageBrowserController * controller = [[LLYimageBrowserController alloc] init];
     controller.imgModelArray = self.largeImgsArray;
     controller.currentIndex = showImageView.tag;

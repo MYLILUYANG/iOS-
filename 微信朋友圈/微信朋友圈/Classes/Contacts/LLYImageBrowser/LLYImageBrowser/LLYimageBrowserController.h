@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "LLYImageModel.h"
+#import "LLYImageBrwoserUtilies.h"
 @interface LLYimageBrowserController : UIViewController
 
 @property (nonatomic, strong) NSArray <LLYImageModel*> *imgModelArray;
@@ -15,5 +16,9 @@
 @property (nonatomic, assign) NSInteger currentIndex;
 
 -(void)show;
+
+@property (nonatomic, assign) CGFloat animationDuration;
+
+@property (nonatomic, assign) LLYImageBrowserViewAnimation inAnimation;
 
 @end

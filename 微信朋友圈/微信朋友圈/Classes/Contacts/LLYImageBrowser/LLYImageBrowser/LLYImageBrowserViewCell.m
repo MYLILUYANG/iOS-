@@ -85,7 +85,7 @@
             height = containerWidth * (imageSize.height / imageSize.width);//图片高度
             if (imageSize.width / imageSize.height > containerScale) {
                 //                图片宽度高度比 大于屏幕宽度高度比。 图片布局是一个宽图
-                NSLog(@"图片布局是一个宽图");
+                NSLog(@"图片布局是一个宽度布满 高度小于屏幕");
                 x = 0;
                 y = (containerHeight - height) / 2 ;//图片 y
                 contactSize = CGSizeMake(containerWidth, height);
@@ -93,8 +93,7 @@
                 
             }else
             {
-                NSLog(@"图片布局是一个长图");
-                //                长图
+                NSLog(@"图片布局是一个 图片长度布满 ，高度 小于屏幕");
                 x = 0;
                 y = 0;
                 contactSize = CGSizeMake(containerWidth, height);
@@ -103,20 +102,26 @@
             }
             self.scrollView.contentSize = CGSizeMake(contactSize.width, contactSize.height);
             self.scrollView.minimumZoomScale = minimumZoomScale;
-            //            if (self.autoCountMaximumZoomScale) {
             self.scrollView.maximumZoomScale = maximumZoomScale * 1.2;  //多给用户缩放 0.2 倍
-            //            } else {
-            //                self.scrollView.maximumZoomScale = self.model.maximumZoomScale;
-            //            }
             self.animatedImageView.frame = CGRectMake(x, y, contactSize.width, contactSize.height);
-            
-            
-            
-            
         }
     }];
 }
 
+/**
+ 计算图片缩放和大小的核心代码
+
+ @param containerSize 布局的内容size
+ @param image 布局的图片
+ @param completd block 返回的是计算好的大小和缩放比例
+ */
++(void)countWithContainerSize:(CGSize)containerSize image:(id)image completd:(void(^)(CGRect _imageFrame, CGSize _contentSize ,CGFloat _minimumZoolScale, CGFloat _maximunZoolScale))completd{
+    
+    
+    
+    if (completd) completd(CGRectMake(0, 0, 0, 0),CGSizeZero,0.0,.01);
+    
+}
 
 
 -(void)singalAction:(UITapGestureRecognizer *)tap
@@ -155,19 +160,6 @@
 
 -(void)zoomingAction:(UITapGestureRecognizer *)tap{
     
-    //    CGPoint touchPoint = [tap locationInView:self.animatedImageView];
-    //
-    //    if (self.scrollView.zoomScale <= 1.0) {
-    //
-    //        CGFloat scaleX = touchPoint.x + self.scrollView.contentOffset.x;//需要放大的图片的X点
-    //        CGFloat sacleY = touchPoint.y + self.scrollView.contentOffset.y;//需要放大的图片的Y点
-    //        [self.scrollView zoomToRect:CGRectMake(scaleX, sacleY, 10, 10) animated:YES];
-    //
-    //    }else{
-    //        [self.scrollView setZoomScale:1.0 animated:YES]; //还原
-    //    }
-    
-    
     UIScrollView *scrollView = self.scrollView;
     UIView *zoomView = [self viewForZoomingInScrollView:scrollView];
     CGPoint point = [tap locationInView:zoomView];
@@ -175,10 +167,7 @@
     if (!CGRectContainsPoint(zoomView.bounds, point)) {
         return;
     }
-    
-    //    if(scrollView.zoomScale > 1){
-    //        [scrollView setZoomScale:1 animated:YES];
-    //    }
+
     NSLog(@"%.2f   %.2f",scrollView.zoomScale, scrollView.maximumZoomScale);
     
     if (scrollView.zoomScale == scrollView.minimumZoomScale) {
@@ -186,32 +175,10 @@
     }else
     {
         [scrollView setZoomScale:1.0 animated:YES];
-        //        [scrollView zoomToRect:CGRectMake(point.x, point.y, 1, 1) animated:YES];
+        
     }
     
-    //    if (self.scrollView.maximumZoomScale > 1) {
-    //        [self.scrollView setZoomScale:1 animated:YES];
-    //    }
-    
-    /*
-     //    printf(__func__);
-     CGFloat newScale;
-     
-     if (_zoomOut_In) {
-     //        放大 或缩小状态
-     newScale = 2 * 1.5;
-     _zoomOut_In = NO;
-     
-     }else{
-     //        正常状态
-     newScale = 1.0;
-     _zoomOut_In = YES;
-     }
-     
-     CGRect zoomRect = [self zoomRectForScale:newScale withCenter:[tap locationInView:tap.view]];
-     [_scrollView zoomToRect:zoomRect animated:YES];
-     */
-    
+   
     
 }
 
@@ -264,43 +231,18 @@
     self.animatedImageView.frame = imageViewFrame;
 }
 
+
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    //    [self dragAnimation_respondsToScrollViewPanGesture];
-    NSLog(@"x  scroll %@",scrollView);
+    
     
 }
-//- (void)dragAnimation_respondsToScrollViewPanGesture {
-//    if (self.cancelDragImageViewAnimation || isZooming) return;
-//
-//    UIScrollView *scrollView = self.scrollView;
-//    UIPanGestureRecognizer *pan = scrollView.panGestureRecognizer;
-//    if (pan.numberOfTouches != 1) return;
-//
-//    CGPoint point = [pan locationInView:self];
-//    NSLog(@"point : %@", NSStringFromCGPoint(point));
-//    BOOL shouldAddAnimationView = point.y > lastPointY && scrollView.contentOffset.y < -10 && !self.animateImageView.superview;
-//    if (shouldAddAnimationView) {
-//        [self dragAnimation_addAnimationImageViewWithPoint:point];
-//    }
-//
-//    if (pan.state == UIGestureRecognizerStateChanged) {
-//        [self dragAnimation_performAnimationForAnimationImageViewWithPoint:point container:self];
-//    }
-//
-//    lastPointY = point.y;
-//    lastPointX = point.x;
-//}
 
 -(FLAnimatedImageView *)animatedImageView{
     if (!_animatedImageView) {
         _animatedImageView = [[FLAnimatedImageView alloc] init];
         _animatedImageView.frame = CGRectMake(0, 200, K_ScreenW, K_Width(300));
         _animatedImageView.contentMode = UIViewContentModeScaleAspectFill;
-        
-        //        UITapGestureRecognizer *doubleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(zoomingAction:)];
-        //        doubleTap.numberOfTapsRequired = 2;
-        //        [_animatedImageView addGestureRecognizer:doubleTap];
         _animatedImageView.userInteractionEnabled = YES;
     }
     return _animatedImageView;

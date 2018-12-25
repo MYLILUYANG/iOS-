@@ -51,6 +51,11 @@
 		DE631BA321BE3AE4007E0E69 /* LLYImageBrowserViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE631BA221BE3AE4007E0E69 /* LLYImageBrowserViewCell.m */; };
 		DE631BA621BE4577007E0E69 /* LLYImageBrowserLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = DE631BA521BE4577007E0E69 /* LLYImageBrowserLayout.m */; };
 		DE631BA921BE5D9F007E0E69 /* LLYImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DE631BA821BE5D9F007E0E69 /* LLYImageModel.m */; };
+		DE67F77F21CB352800200686 /* LLYImgController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE67F77E21CB352800200686 /* LLYImgController.m */; };
+		DE67F78221CB377400200686 /* LLYImg2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE67F78121CB377400200686 /* LLYImg2ViewController.m */; };
+		DE67F78521CB390C00200686 /* LLYimgProtocolTranslationAnimate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE67F78421CB390C00200686 /* LLYimgProtocolTranslationAnimate.m */; };
+		DE67F78921CB7B8F00200686 /* LLYImageBrowserTranslationAnimate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE67F78821CB7B8F00200686 /* LLYImageBrowserTranslationAnimate.m */; };
+		DE67F78F21CB903300200686 /* LLYImageBrwoserUtilies.m in Sources */ = {isa = PBXBuildFile; fileRef = DE67F78E21CB903300200686 /* LLYImageBrwoserUtilies.m */; };
 		DE6FBD5D207A55AA00334509 /* LLYTimeLineFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6FBD5C207A55AA00334509 /* LLYTimeLineFrameModel.m */; };
 		DE6FBD60207A625D00334509 /* NSString+TimeOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6FBD5F207A625D00334509 /* NSString+TimeOperation.m */; };
 		DE7D132D207B64CF00FADC6F /* LLYLikeAndCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7D132C207B64CF00FADC6F /* LLYLikeAndCommentView.m */; };
@@ -65,6 +70,9 @@
 		DEB78BB42092F160008DB4F0 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB78BB32092F160008DB4F0 /* Person.m */; };
 		DEB78BBD20930DAD008DB4F0 /* NSURL+swizing.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB78BBC20930DAD008DB4F0 /* NSURL+swizing.m */; };
 		DEB78BC020931BF3008DB4F0 /* NSString+attribute.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB78BBF20931BF3008DB4F0 /* NSString+attribute.m */; };
+		DED3773B21C79F9A0032B883 /* LLYTransformAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DED3773A21C79F9A0032B883 /* LLYTransformAnimationController.m */; };
+		DED3773F21C7A5790032B883 /* PresentDismissController.m in Sources */ = {isa = PBXBuildFile; fileRef = DED3773E21C7A5790032B883 /* PresentDismissController.m */; };
+		DED3774221C7AA0D0032B883 /* LLYInterfaceActionTranslition.m in Sources */ = {isa = PBXBuildFile; fileRef = DED3774121C7AA0D0032B883 /* LLYInterfaceActionTranslition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -167,6 +175,16 @@
 		DE631BA521BE4577007E0E69 /* LLYImageBrowserLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYImageBrowserLayout.m; sourceTree = "<group>"; };
 		DE631BA721BE5D9F007E0E69 /* LLYImageModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYImageModel.h; sourceTree = "<group>"; };
 		DE631BA821BE5D9F007E0E69 /* LLYImageModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYImageModel.m; sourceTree = "<group>"; };
+		DE67F77D21CB352800200686 /* LLYImgController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYImgController.h; sourceTree = "<group>"; };
+		DE67F77E21CB352800200686 /* LLYImgController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYImgController.m; sourceTree = "<group>"; };
+		DE67F78021CB377400200686 /* LLYImg2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYImg2ViewController.h; sourceTree = "<group>"; };
+		DE67F78121CB377400200686 /* LLYImg2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYImg2ViewController.m; sourceTree = "<group>"; };
+		DE67F78321CB390C00200686 /* LLYimgProtocolTranslationAnimate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYimgProtocolTranslationAnimate.h; sourceTree = "<group>"; };
+		DE67F78421CB390C00200686 /* LLYimgProtocolTranslationAnimate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYimgProtocolTranslationAnimate.m; sourceTree = "<group>"; };
+		DE67F78721CB7B8F00200686 /* LLYImageBrowserTranslationAnimate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYImageBrowserTranslationAnimate.h; sourceTree = "<group>"; };
+		DE67F78821CB7B8F00200686 /* LLYImageBrowserTranslationAnimate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYImageBrowserTranslationAnimate.m; sourceTree = "<group>"; };
+		DE67F78D21CB903300200686 /* LLYImageBrwoserUtilies.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYImageBrwoserUtilies.h; sourceTree = "<group>"; };
+		DE67F78E21CB903300200686 /* LLYImageBrwoserUtilies.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYImageBrwoserUtilies.m; sourceTree = "<group>"; };
 		DE6FBD5B207A55AA00334509 /* LLYTimeLineFrameModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYTimeLineFrameModel.h; sourceTree = "<group>"; };
 		DE6FBD5C207A55AA00334509 /* LLYTimeLineFrameModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYTimeLineFrameModel.m; sourceTree = "<group>"; };
 		DE6FBD5E207A625D00334509 /* NSString+TimeOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+TimeOperation.h"; sourceTree = "<group>"; };
@@ -194,6 +212,12 @@
 		DEB78BBC20930DAD008DB4F0 /* NSURL+swizing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+swizing.m"; sourceTree = "<group>"; };
 		DEB78BBE20931BF3008DB4F0 /* NSString+attribute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+attribute.h"; sourceTree = "<group>"; };
 		DEB78BBF20931BF3008DB4F0 /* NSString+attribute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+attribute.m"; sourceTree = "<group>"; };
+		DED3773921C79F9A0032B883 /* LLYTransformAnimationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYTransformAnimationController.h; sourceTree = "<group>"; };
+		DED3773A21C79F9A0032B883 /* LLYTransformAnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYTransformAnimationController.m; sourceTree = "<group>"; };
+		DED3773D21C7A5790032B883 /* PresentDismissController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentDismissController.h; sourceTree = "<group>"; };
+		DED3773E21C7A5790032B883 /* PresentDismissController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentDismissController.m; sourceTree = "<group>"; };
+		DED3774021C7AA0D0032B883 /* LLYInterfaceActionTranslition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYInterfaceActionTranslition.h; sourceTree = "<group>"; };
+		DED3774121C7AA0D0032B883 /* LLYInterfaceActionTranslition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYInterfaceActionTranslition.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,6 +308,8 @@
 		DE4249D9214806E300908DB1 /* LLYImageBrowser */ = {
 			isa = PBXGroup;
 			children = (
+				DE67F78A21CB8C5100200686 /* Utilites */,
+				DE67F78621CB7B4B00200686 /* LLYImageBrowserTranslateAnimation */,
 				DE631B9B21BE1666007E0E69 /* LLYimageBrowserController.h */,
 				DE631B9C21BE1666007E0E69 /* LLYimageBrowserController.m */,
 				DE631B9821BE1651007E0E69 /* LLYImageBrowserView.h */,
@@ -423,6 +449,7 @@
 			children = (
 				DE5686DA20622C0C008B94FE /* LLYContactController.h */,
 				DE5686DB20622C0C008B94FE /* LLYContactController.m */,
+				DED3773821C79F4D0032B883 /* TransformAnimation */,
 				DE4249D52148033F00908DB1 /* LLYImageBrowser */,
 				DE5270AD20DCDAA600F68262 /* AfnetWorking */,
 				DE29EA7D20A2A51D00A379B9 /* 二维码 */,
@@ -586,6 +613,24 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
+		DE67F78621CB7B4B00200686 /* LLYImageBrowserTranslateAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				DE67F78721CB7B8F00200686 /* LLYImageBrowserTranslationAnimate.h */,
+				DE67F78821CB7B8F00200686 /* LLYImageBrowserTranslationAnimate.m */,
+			);
+			path = LLYImageBrowserTranslateAnimation;
+			sourceTree = "<group>";
+		};
+		DE67F78A21CB8C5100200686 /* Utilites */ = {
+			isa = PBXGroup;
+			children = (
+				DE67F78D21CB903300200686 /* LLYImageBrwoserUtilies.h */,
+				DE67F78E21CB903300200686 /* LLYImageBrwoserUtilies.m */,
+			);
+			path = Utilites;
+			sourceTree = "<group>";
+		};
 		DE7D132A207B647D00FADC6F /* LikeAndCommentView */ = {
 			isa = PBXGroup;
 			children = (
@@ -663,6 +708,33 @@
 				DEA4DDE820A15B1400FCEC01 /* GCDController.m */,
 			);
 			path = GCD;
+			sourceTree = "<group>";
+		};
+		DED3773821C79F4D0032B883 /* TransformAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				DED3773921C79F9A0032B883 /* LLYTransformAnimationController.h */,
+				DED3773A21C79F9A0032B883 /* LLYTransformAnimationController.m */,
+				DE67F77D21CB352800200686 /* LLYImgController.h */,
+				DE67F77E21CB352800200686 /* LLYImgController.m */,
+				DE67F78021CB377400200686 /* LLYImg2ViewController.h */,
+				DE67F78121CB377400200686 /* LLYImg2ViewController.m */,
+				DE67F78321CB390C00200686 /* LLYimgProtocolTranslationAnimate.h */,
+				DE67F78421CB390C00200686 /* LLYimgProtocolTranslationAnimate.m */,
+				DED3774021C7AA0D0032B883 /* LLYInterfaceActionTranslition.h */,
+				DED3774121C7AA0D0032B883 /* LLYInterfaceActionTranslition.m */,
+				DED3773C21C7A51C0032B883 /* dismiss_present */,
+			);
+			path = TransformAnimation;
+			sourceTree = "<group>";
+		};
+		DED3773C21C7A51C0032B883 /* dismiss_present */ = {
+			isa = PBXGroup;
+			children = (
+				DED3773D21C7A5790032B883 /* PresentDismissController.h */,
+				DED3773E21C7A5790032B883 /* PresentDismissController.m */,
+			);
+			path = dismiss_present;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -859,6 +931,7 @@
 				DE600D0E209C45E100461DF6 /* GPUImage_01_Controller.m in Sources */,
 				DEB78BB02092EC0E008DB4F0 /* MyBlogController.m in Sources */,
 				DE4D738E207B0A05007819FF /* UIButton+CustomBtn.m in Sources */,
+				DE67F78921CB7B8F00200686 /* LLYImageBrowserTranslationAnimate.m in Sources */,
 				DEB742832085F9C1004EF510 /* LLYImageBrowseCell.m in Sources */,
 				DE56870820624AAB008B94FE /* LLYTimeLineModel.m in Sources */,
 				DEA4DDE620A1462700FCEC01 /* NSObject+Category.m in Sources */,
@@ -870,6 +943,10 @@
 				DE5686D620622BE8008B94FE /* LLYMineController.m in Sources */,
 				DE5686D320622BD9008B94FE /* LLYDiscoverController.m in Sources */,
 				DE5686D920622BF5008B94FE /* LLYHomeController.m in Sources */,
+				DED3773F21C7A5790032B883 /* PresentDismissController.m in Sources */,
+				DE67F78221CB377400200686 /* LLYImg2ViewController.m in Sources */,
+				DED3773B21C79F9A0032B883 /* LLYTransformAnimationController.m in Sources */,
+				DED3774221C7AA0D0032B883 /* LLYInterfaceActionTranslition.m in Sources */,
 				DEB78BC020931BF3008DB4F0 /* NSString+attribute.m in Sources */,
 				DE6FBD5D207A55AA00334509 /* LLYTimeLineFrameModel.m in Sources */,
 				DE29EA9420A2AE1000A379B9 /* QRCodeMyCardViewControl.swift in Sources */,
@@ -884,13 +961,16 @@
 				DE4D738B207B02EA007819FF /* LLYOperationMenuView.m in Sources */,
 				DE631B9D21BE1666007E0E69 /* LLYimageBrowserController.m in Sources */,
 				DE56869A2062296A008B94FE /* main.m in Sources */,
+				DE67F77F21CB352800200686 /* LLYImgController.m in Sources */,
 				DE631BA621BE4577007E0E69 /* LLYImageBrowserLayout.m in Sources */,
 				DE609943207384BB0041A0D1 /* LLYImgContainerView.m in Sources */,
+				DE67F78521CB390C00200686 /* LLYimgProtocolTranslationAnimate.m in Sources */,
 				DE56870520624A92008B94FE /* LLYTimeLineCell.m in Sources */,
 				DE155D81206E10AE009947C9 /* UIView+Frame.m in Sources */,
 				DE631BA021BE168E007E0E69 /* ImageBroserViewController.m in Sources */,
 				DE6FBD60207A625D00334509 /* NSString+TimeOperation.m in Sources */,
 				DE18CB26214947F200CFD227 /* ImageBrowserCell.m in Sources */,
+				DE67F78F21CB903300200686 /* LLYImageBrwoserUtilies.m in Sources */,
 				DEB78BB42092F160008DB4F0 /* Person.m in Sources */,
 				DE5686DF20622D0F008B94FE /* LLYTabBarController.m in Sources */,
 				DEA4DDE920A15B1400FCEC01 /* GCDController.m in Sources */,
