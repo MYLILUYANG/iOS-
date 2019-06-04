@@ -9,6 +9,7 @@
 #import "LLYImageBrowserTranslationAnimate.h"
 #import "LLYimageBrowserController.h"
 #import "LLYImageModel.h"
+#import "LLYImageBrowserViewCell.h"
 @interface LLYImageBrowserTranslationAnimate()
 {
     //   __weak LLYimageBrowserController *_browserView;
@@ -55,13 +56,17 @@
     CGRect fromFrame;
     UIImage *image;
     
-//    NSLog(@"11111");
-    
     NSArray *modelArray = self.browserView.imgModelArray;
     NSInteger index = self.browserView.currentIndex;
 
+    
+    
     LLYImageModel *currentModel = modelArray[index];
     
+    
+    [LLYImageBrowserViewCell countWithContainerSize:containerView.bounds.size image:@"sss" completd:^(CGRect _imageFrame, CGSize _contentSize, CGFloat _minimumZoolScale, CGFloat _maximunZoolScale) {
+        
+    }];
     
     
     

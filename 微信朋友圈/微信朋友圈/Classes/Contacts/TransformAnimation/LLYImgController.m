@@ -17,6 +17,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(50, 500, 40, 30)];
+    [button addTarget:self action:@selector(dismissAction:) forControlEvents:UIControlEventTouchUpInside];
+    [button setTitle:@"返回" forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [button setBackgroundImage:[UIImage imageNamed:@"qrcode_border"] forState:UIControlStateNormal];
+    [self.view addSubview:button];
+    
+    
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(20, 20, 200, 200)];
     view.backgroundColor = K_RandColor;
     view.userInteractionEnabled = YES;
@@ -26,16 +35,18 @@
     _baseView = view;
 }
 
+-(void)dismissAction:(UIButton *)sender{
+    NSLog(@"%s",__func__);
+//    [self dismissViewControllerAnimated:YES completion:nil];
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 -(void)tapAction:(UITapGestureRecognizer *)tap
 {
     printf(__func__);
     LLYImg2ViewController *controller= [[LLYImg2ViewController alloc] init];
-    
     controller.transitioningDelegate = self;
-    
     [self presentViewController:controller animated:YES completion:nil];
-    
-    
 }
 
 - (void)didReceiveMemoryWarning {

@@ -6,5 +6,5 @@
 #import <MBProgressHUD.h>
 #import <Masonry.h>
 
-
+#import <UIImageView+WebCache.h>
 

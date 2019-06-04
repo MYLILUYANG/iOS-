@@ -59,6 +59,8 @@
 		DE6FBD5D207A55AA00334509 /* LLYTimeLineFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6FBD5C207A55AA00334509 /* LLYTimeLineFrameModel.m */; };
 		DE6FBD60207A625D00334509 /* NSString+TimeOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6FBD5F207A625D00334509 /* NSString+TimeOperation.m */; };
 		DE7D132D207B64CF00FADC6F /* LLYLikeAndCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7D132C207B64CF00FADC6F /* LLYLikeAndCommentView.m */; };
+		DE8C6E49229FBE6500D2CB98 /* CardSwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C6E48229FBE6500D2CB98 /* CardSwitchViewController.swift */; };
+		DE8C6E4C229FC07D00D2CB98 /* tantanCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C6E4B229FC07D00D2CB98 /* tantanCollectionViewLayout.swift */; };
 		DEA4DDE620A1462700FCEC01 /* NSObject+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA4DDE520A1462700FCEC01 /* NSObject+Category.m */; };
 		DEA4DDE920A15B1400FCEC01 /* GCDController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA4DDE820A15B1400FCEC01 /* GCDController.m */; };
 		DEB742802085F151004EF510 /* LLYImageBrowse.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB7427F2085F151004EF510 /* LLYImageBrowse.m */; };
@@ -70,9 +72,12 @@
 		DEB78BB42092F160008DB4F0 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB78BB32092F160008DB4F0 /* Person.m */; };
 		DEB78BBD20930DAD008DB4F0 /* NSURL+swizing.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB78BBC20930DAD008DB4F0 /* NSURL+swizing.m */; };
 		DEB78BC020931BF3008DB4F0 /* NSString+attribute.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB78BBF20931BF3008DB4F0 /* NSString+attribute.m */; };
+		DEBB5D3222A0C70E003E5CC0 /* TanTanViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBB5D3122A0C70E003E5CC0 /* TanTanViewCell.swift */; };
+		DEBB5D3522A11E17003E5CC0 /* TantanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBB5D3422A11E17003E5CC0 /* TantanModel.swift */; };
 		DED3773B21C79F9A0032B883 /* LLYTransformAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DED3773A21C79F9A0032B883 /* LLYTransformAnimationController.m */; };
 		DED3773F21C7A5790032B883 /* PresentDismissController.m in Sources */ = {isa = PBXBuildFile; fileRef = DED3773E21C7A5790032B883 /* PresentDismissController.m */; };
 		DED3774221C7AA0D0032B883 /* LLYInterfaceActionTranslition.m in Sources */ = {isa = PBXBuildFile; fileRef = DED3774121C7AA0D0032B883 /* LLYInterfaceActionTranslition.m */; };
+		DEEC01E122A610CE003D0D1E /* CardDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEC01E022A610CE003D0D1E /* CardDetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -191,6 +196,8 @@
 		DE6FBD5F207A625D00334509 /* NSString+TimeOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+TimeOperation.m"; sourceTree = "<group>"; };
 		DE7D132B207B64CF00FADC6F /* LLYLikeAndCommentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYLikeAndCommentView.h; sourceTree = "<group>"; };
 		DE7D132C207B64CF00FADC6F /* LLYLikeAndCommentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYLikeAndCommentView.m; sourceTree = "<group>"; };
+		DE8C6E48229FBE6500D2CB98 /* CardSwitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSwitchViewController.swift; sourceTree = "<group>"; };
+		DE8C6E4B229FC07D00D2CB98 /* tantanCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tantanCollectionViewLayout.swift; sourceTree = "<group>"; };
 		DEA4DDE420A1462700FCEC01 /* NSObject+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Category.h"; sourceTree = "<group>"; };
 		DEA4DDE520A1462700FCEC01 /* NSObject+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Category.m"; sourceTree = "<group>"; };
 		DEA4DDE720A15B1400FCEC01 /* GCDController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDController.h; sourceTree = "<group>"; };
@@ -212,12 +219,15 @@
 		DEB78BBC20930DAD008DB4F0 /* NSURL+swizing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+swizing.m"; sourceTree = "<group>"; };
 		DEB78BBE20931BF3008DB4F0 /* NSString+attribute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+attribute.h"; sourceTree = "<group>"; };
 		DEB78BBF20931BF3008DB4F0 /* NSString+attribute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+attribute.m"; sourceTree = "<group>"; };
+		DEBB5D3122A0C70E003E5CC0 /* TanTanViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanTanViewCell.swift; sourceTree = "<group>"; };
+		DEBB5D3422A11E17003E5CC0 /* TantanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TantanModel.swift; sourceTree = "<group>"; };
 		DED3773921C79F9A0032B883 /* LLYTransformAnimationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYTransformAnimationController.h; sourceTree = "<group>"; };
 		DED3773A21C79F9A0032B883 /* LLYTransformAnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYTransformAnimationController.m; sourceTree = "<group>"; };
 		DED3773D21C7A5790032B883 /* PresentDismissController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentDismissController.h; sourceTree = "<group>"; };
 		DED3773E21C7A5790032B883 /* PresentDismissController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentDismissController.m; sourceTree = "<group>"; };
 		DED3774021C7AA0D0032B883 /* LLYInterfaceActionTranslition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYInterfaceActionTranslition.h; sourceTree = "<group>"; };
 		DED3774121C7AA0D0032B883 /* LLYInterfaceActionTranslition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYInterfaceActionTranslition.m; sourceTree = "<group>"; };
+		DEEC01E022A610CE003D0D1E /* CardDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -447,6 +457,7 @@
 		DE5686C0206229E4008B94FE /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
+				DE8C6E47229FBE2900D2CB98 /* tantan */,
 				DE5686DA20622C0C008B94FE /* LLYContactController.h */,
 				DE5686DB20622C0C008B94FE /* LLYContactController.m */,
 				DED3773821C79F4D0032B883 /* TransformAnimation */,
@@ -640,6 +651,26 @@
 			path = LikeAndCommentView;
 			sourceTree = "<group>";
 		};
+		DE8C6E47229FBE2900D2CB98 /* tantan */ = {
+			isa = PBXGroup;
+			children = (
+				DEBB5D3322A11E01003E5CC0 /* model */,
+				DE8C6E4A229FC05A00D2CB98 /* layoutView */,
+				DE8C6E48229FBE6500D2CB98 /* CardSwitchViewController.swift */,
+				DEEC01E022A610CE003D0D1E /* CardDetailController.swift */,
+			);
+			path = tantan;
+			sourceTree = "<group>";
+		};
+		DE8C6E4A229FC05A00D2CB98 /* layoutView */ = {
+			isa = PBXGroup;
+			children = (
+				DE8C6E4B229FC07D00D2CB98 /* tantanCollectionViewLayout.swift */,
+				DEBB5D3122A0C70E003E5CC0 /* TanTanViewCell.swift */,
+			);
+			path = layoutView;
+			sourceTree = "<group>";
+		};
 		DEA5380220635BBB00ED9A45 /* TimeLineCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -708,6 +739,14 @@
 				DEA4DDE820A15B1400FCEC01 /* GCDController.m */,
 			);
 			path = GCD;
+			sourceTree = "<group>";
+		};
+		DEBB5D3322A11E01003E5CC0 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				DEBB5D3422A11E17003E5CC0 /* TantanModel.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		DED3773821C79F4D0032B883 /* TransformAnimation */ = {
@@ -939,11 +978,13 @@
 				DEB742802085F151004EF510 /* LLYImageBrowse.m in Sources */,
 				DE18CB29214956D500CFD227 /* LayoutImagesView.m in Sources */,
 				DE5686E420622DB9008B94FE /* LLYTimeLineController.m in Sources */,
+				DEBB5D3522A11E17003E5CC0 /* TantanModel.swift in Sources */,
 				DE631B9A21BE1651007E0E69 /* LLYImageBrowserView.m in Sources */,
 				DE5686D620622BE8008B94FE /* LLYMineController.m in Sources */,
 				DE5686D320622BD9008B94FE /* LLYDiscoverController.m in Sources */,
 				DE5686D920622BF5008B94FE /* LLYHomeController.m in Sources */,
 				DED3773F21C7A5790032B883 /* PresentDismissController.m in Sources */,
+				DE8C6E4C229FC07D00D2CB98 /* tantanCollectionViewLayout.swift in Sources */,
 				DE67F78221CB377400200686 /* LLYImg2ViewController.m in Sources */,
 				DED3773B21C79F9A0032B883 /* LLYTransformAnimationController.m in Sources */,
 				DED3774221C7AA0D0032B883 /* LLYInterfaceActionTranslition.m in Sources */,
@@ -954,10 +995,12 @@
 				DE5686FF20624671008B94FE /* ViewController.m in Sources */,
 				DE631BA921BE5D9F007E0E69 /* LLYImageModel.m in Sources */,
 				DE7D132D207B64CF00FADC6F /* LLYLikeAndCommentView.m in Sources */,
+				DEEC01E122A610CE003D0D1E /* CardDetailController.swift in Sources */,
 				DE600D12209C59F600461DF6 /* OpenGLESController.m in Sources */,
 				DE631BA321BE3AE4007E0E69 /* LLYImageBrowserViewCell.m in Sources */,
 				DE5686D020622BAE008B94FE /* LLYBaseTableViewController.m in Sources */,
 				DEB78BAC2092C9CC008DB4F0 /* RuntimeController.m in Sources */,
+				DEBB5D3222A0C70E003E5CC0 /* TanTanViewCell.swift in Sources */,
 				DE4D738B207B02EA007819FF /* LLYOperationMenuView.m in Sources */,
 				DE631B9D21BE1666007E0E69 /* LLYimageBrowserController.m in Sources */,
 				DE56869A2062296A008B94FE /* main.m in Sources */,
@@ -976,6 +1019,7 @@
 				DEA4DDE920A15B1400FCEC01 /* GCDController.m in Sources */,
 				DE29EA9320A2AE1000A379B9 /* QRCodeController.swift in Sources */,
 				DEB78BBD20930DAD008DB4F0 /* NSURL+swizing.m in Sources */,
+				DE8C6E49229FBE6500D2CB98 /* CardSwitchViewController.swift in Sources */,
 				DE5270B020DCDAD900F68262 /* AFController.m in Sources */,
 				DE5686DC20622C0C008B94FE /* LLYContactController.m in Sources */,
 				DE56868C2062296A008B94FE /* AppDelegate.m in Sources */,
@@ -1153,7 +1197,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				GCC_PREFIX_HEADER = "/Users/liluyang/Desktop/微信朋友圈/微信朋友圈/Classes/Common/LLYTimeLine.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/微信朋友圈/Classes/Common/LLYTimeLine.pch";
 				INFOPLIST_FILE = "微信朋友圈/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1183,7 +1227,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				GCC_PREFIX_HEADER = "/Users/liluyang/Desktop/微信朋友圈/微信朋友圈/Classes/Common/LLYTimeLine.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/微信朋友圈/Classes/Common/LLYTimeLine.pch";
 				INFOPLIST_FILE = "微信朋友圈/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

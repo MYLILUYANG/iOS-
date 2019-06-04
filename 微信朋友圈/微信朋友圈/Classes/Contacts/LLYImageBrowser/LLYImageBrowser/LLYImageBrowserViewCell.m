@@ -67,43 +67,53 @@
     [_animatedImageView sd_setImageWithURL:imageModel.url completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
         
         if (image) {
-            //            计算图片大小和缩放比例
-            CGSize imageSize = [FLAnimatedImage sizeForImage:image];
-            CGFloat containerWidth = self.scrollView.bounds.size.width;
-            CGFloat containerHeight = self.scrollView.bounds.size.height;
-            CGFloat containerScale = containerWidth / containerHeight;
-            CGFloat width = 0, height = 0, x = 0, y = 0, minimumZoomScale = 1, maximumZoomScale = 1;
-            CGSize contactSize = CGSizeZero;
-            //            计算最大缩放比例
-            CGFloat widthScale = imageSize.width/containerWidth,
-            heightScale = imageSize.height / containerHeight,
-            maxScale = widthScale > heightScale ? widthScale : heightScale;
-            maximumZoomScale = maxScale > 1 ? maxScale : 1;
             
-            //            根据图片 满足宽度 布局
-            width = containerWidth;//图片宽度
-            height = containerWidth * (imageSize.height / imageSize.width);//图片高度
-            if (imageSize.width / imageSize.height > containerScale) {
-                //                图片宽度高度比 大于屏幕宽度高度比。 图片布局是一个宽图
-                NSLog(@"图片布局是一个宽度布满 高度小于屏幕");
-                x = 0;
-                y = (containerHeight - height) / 2 ;//图片 y
-                contactSize = CGSizeMake(containerWidth, height);
-                minimumZoomScale = 1;
+            [LLYImageBrowserViewCell countWithContainerSize:self.bounds.size image:image completd:^(CGRect _imageFrame, CGSize _contentSize, CGFloat _minimumZoolScale, CGFloat _maximunZoolScale) {
                 
-            }else
-            {
-                NSLog(@"图片布局是一个 图片长度布满 ，高度 小于屏幕");
-                x = 0;
-                y = 0;
-                contactSize = CGSizeMake(containerWidth, height);
+                self.scrollView.contentSize = CGSizeMake(_contentSize.width, _contentSize.height);
+                self.scrollView.minimumZoomScale = _minimumZoolScale;
+                self.scrollView.maximumZoomScale = _maximunZoolScale * 1.2;  //多给用户缩放 0.2 倍
+                self.animatedImageView.frame = _imageFrame;
                 
-                minimumZoomScale = containerHeight / height;
-            }
-            self.scrollView.contentSize = CGSizeMake(contactSize.width, contactSize.height);
-            self.scrollView.minimumZoomScale = minimumZoomScale;
-            self.scrollView.maximumZoomScale = maximumZoomScale * 1.2;  //多给用户缩放 0.2 倍
-            self.animatedImageView.frame = CGRectMake(x, y, contactSize.width, contactSize.height);
+            }];
+            
+            //            计算图片大小和缩放比例
+//            CGSize imageSize = [FLAnimatedImage sizeForImage:image];
+//            CGFloat containerWidth = self.scrollView.bounds.size.width;
+//            CGFloat containerHeight = self.scrollView.bounds.size.height;
+//            CGFloat containerScale = containerWidth / containerHeight;
+//            CGFloat width = 0, height = 0, x = 0, y = 0, minimumZoomScale = 1, maximumZoomScale = 1;
+//            CGSize contactSize = CGSizeZero;
+//            //            计算最大缩放比例
+//            CGFloat widthScale = imageSize.width/containerWidth,
+//            heightScale = imageSize.height / containerHeight,
+//            maxScale = widthScale > heightScale ? widthScale : heightScale;
+//            maximumZoomScale = maxScale > 1 ? maxScale : 1;
+//
+//            //            根据图片 满足宽度 布局
+//            width = containerWidth;//图片宽度
+//            height = containerWidth * (imageSize.height / imageSize.width);//图片高度
+//            if (imageSize.width / imageSize.height > containerScale) {
+//                //                图片宽度高度比 大于屏幕宽度高度比。 图片布局是一个宽图
+//                NSLog(@"图片布局是一个宽度布满 高度小于屏幕");
+//                x = 0;
+//                y = (containerHeight - height) / 2 ;//图片 y
+//                contactSize = CGSizeMake(containerWidth, height);
+//                minimumZoomScale = 1;
+//
+//            }else
+//            {
+//                NSLog(@"图片布局是一个 图片高度度布满 ，宽度 小于屏幕");
+//                x = 0;
+//                y = 0;
+//                contactSize = CGSizeMake(containerWidth, height);
+//
+//                minimumZoomScale = containerHeight / height;
+//            }
+//            self.scrollView.contentSize = CGSizeMake(contactSize.width, contactSize.height);
+//            self.scrollView.minimumZoomScale = minimumZoomScale;
+//            self.scrollView.maximumZoomScale = maximumZoomScale * 1.2;  //多给用户缩放 0.2 倍
+//            self.animatedImageView.frame = CGRectMake(x, y, contactSize.width, contactSize.height);
         }
     }];
 }
@@ -117,9 +127,42 @@
  */
 +(void)countWithContainerSize:(CGSize)containerSize image:(id)image completd:(void(^)(CGRect _imageFrame, CGSize _contentSize ,CGFloat _minimumZoolScale, CGFloat _maximunZoolScale))completd{
     
+    CGSize imageSize = [FLAnimatedImage sizeForImage:image];
     
+    CGFloat containerWidth = containerSize.width,
+    containerHeight = containerSize.height;
+    CGFloat containerScale = containerWidth / containerHeight;
     
-    if (completd) completd(CGRectMake(0, 0, 0, 0),CGSizeZero,0.0,.01);
+    CGFloat x = 0, y = 0, width = 0, height = 0, minimumZoolScale = 0, maxmumZoolScale = 0;
+    CGSize contentSize = CGSizeZero;
+    
+//    计算最大缩放比例
+    CGFloat widthScale = imageSize.width / containerWidth,
+    heightScale = imageSize.height / containerHeight,
+    maxScale = widthScale > heightScale ? widthScale : heightScale;
+    maxmumZoolScale = maxScale > 1 ? maxScale : 1;
+    
+//    计算竖屏 情况下的图片布局
+    
+    width = containerWidth;
+    height = containerWidth / (imageSize.width / imageSize.height) ;
+    NSLog(@"%.2f %.2f",width, height);
+    
+    if ((imageSize.width / imageSize.height) > containerScale) {
+//        宽度布满      高度计算
+        x = 0;
+        y = (containerHeight - height) * 0.5;
+        containerSize = CGSizeMake(containerWidth, height);
+        minimumZoolScale = 1;
+    }else{
+        x = 0;
+        y = 0;
+        containerSize = CGSizeMake(containerWidth, containerHeight);
+        minimumZoolScale = containerHeight / height;
+        
+    }
+    
+    if (completd) completd(CGRectMake(x, y, width, height),contentSize, minimumZoolScale,maxmumZoolScale);
     
 }
 

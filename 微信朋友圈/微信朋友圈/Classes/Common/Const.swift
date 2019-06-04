@@ -14,7 +14,7 @@ func K_RGBColor(r:CGFloat,_ g:CGFloat,_ b:CGFloat) -> UIColor
 }
 func K_RandColor() ->UIColor {
     
-    return UIColor(red: CGFloat(arc4random()%255), green: CGFloat(arc4random()%255), blue: CGFloat(arc4random()%255), alpha: 1);
+    return UIColor(red: CGFloat(arc4random()%255 ) / 100, green: CGFloat(arc4random()%255) / 100, blue: CGFloat(arc4random()%255) / 100, alpha: 1);
 }
 
 func K_Width(width: CGFloat) -> CGFloat {
