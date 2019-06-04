@@ -14,28 +14,13 @@ class CardSwitchViewController: UIViewController,UICollectionViewDelegate, UICol
     var dataArray:Array<Any> = Array();
     var orignalAngel:CGPoint = CGPoint.zero;
     var angleT:CGFloat = 0.0;
-  
     var MycollectionView = UICollectionView(frame: CGRect.init(x: 0, y: 0, width: K_ScreenW, height: K_ScreenH), collectionViewLayout: tantanCollectionViewLayout());
     
- 
-    
-    
-    
     override func viewDidLoad() {
-        
-        
-        
         super.viewDidLoad()
-//        let layout = UICollectionViewLayout.init();
-//        layout.itemSize = CGSize(width: K_Width(width: 300), height: K_Height(height: 400));
-        
-//        let MYcollectionView = UICollectionView(frame: CGRect.init(x: 0, y: 0, width: K_ScreenW, height: K_ScreenH), collectionViewLayout: tantanCollectionViewLayout());
-//        MYcollectionView.showsVerticalScrollIndicator = false;
-//        MYcollectionView.showsHorizontalScrollIndicator = false;
         MycollectionView.delegate = self;
         MycollectionView.dataSource = self;
-        MycollectionView.backgroundColor = UIColor.red;
-        
+        MycollectionView.backgroundColor = K_RandColor();
         MycollectionView.register(TanTanViewCell.self, forCellWithReuseIdentifier: "cellId")
         view.addSubview(MycollectionView);
         
@@ -56,8 +41,6 @@ class CardSwitchViewController: UIViewController,UICollectionViewDelegate, UICol
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellId", for: indexPath) as! TanTanViewCell;
-        cell.backImage.image = UIImage(named: "qrcode_border");
-        cell.textL.text = "asdfasdfasdfad";
         cell.tanModel = self.dataArray[indexPath.item] as! TantanModel;
         let tap = UIPanGestureRecognizer.init(target: self, action: #selector(self.tapAction(tap:)))
         cell.addGestureRecognizer(tap);
@@ -67,48 +50,31 @@ class CardSwitchViewController: UIViewController,UICollectionViewDelegate, UICol
     }
     
     func clickDetail(tap:UITapGestureRecognizer) -> Void {
-        
         let controller = CardDetailController();
         self.navigationController?.pushViewController(controller, animated: true);
-        
     }
     
     func tapAction(tap:UIPanGestureRecognizer) -> Void{
         let cell = tap.view;
-
         let indexpath:IndexPath = MycollectionView.indexPath(for: cell as! UICollectionViewCell)! as IndexPath;
         if tap.state ==  UIGestureRecognizer.State.changed{
             
             let pointPan = tap.translation(in: MycollectionView );
-            
-            
             cell!.center = CGPoint(x: cell!.center.x + pointPan.x, y: cell!.center.y + pointPan.y);
-
             angleT = (cell!.center.x - cell!.frame.size.width * 0.5) / cell!.frame.size.width * 0.5;
-            
             cell?.transform = CGAffineTransform(rotationAngle: angleT);
-
             tap.setTranslation(CGPoint.zero, in: cell);
-            
         }else if tap.state == UIGestureRecognizer.State.ended {
-            
-
             if abs(angleT * 180) >= 30{
                 dataArray.remove(at: indexpath.item);
                 MycollectionView.deleteItems(at: [indexpath]);
             }else{
-                
                 UIView.animate(withDuration: 0.5) {
                     cell?.center = self.orignalAngel;
                     cell?.transform = CGAffineTransform(rotationAngle: 0);
                 }
             }
-            
-            
         }
-        
-        
-        
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.dataArray.count;

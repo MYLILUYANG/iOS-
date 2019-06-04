@@ -78,6 +78,10 @@
 		DED3773F21C7A5790032B883 /* PresentDismissController.m in Sources */ = {isa = PBXBuildFile; fileRef = DED3773E21C7A5790032B883 /* PresentDismissController.m */; };
 		DED3774221C7AA0D0032B883 /* LLYInterfaceActionTranslition.m in Sources */ = {isa = PBXBuildFile; fileRef = DED3774121C7AA0D0032B883 /* LLYInterfaceActionTranslition.m */; };
 		DEEC01E122A610CE003D0D1E /* CardDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEC01E022A610CE003D0D1E /* CardDetailController.swift */; };
+		DEEC01E422A61874003D0D1E /* LockController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEC01E322A61874003D0D1E /* LockController.swift */; };
+		DEEC01E622A62378003D0D1E /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEC01E522A62378003D0D1E /* LockView.swift */; };
+		DEEC01E822A6241E003D0D1E /* LockInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEC01E722A6241E003D0D1E /* LockInfoController.swift */; };
+		DEEC01EC22A65C2B003D0D1E /* GCDSwiftController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEC01EB22A65C2B003D0D1E /* GCDSwiftController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -228,6 +232,10 @@
 		DED3774021C7AA0D0032B883 /* LLYInterfaceActionTranslition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYInterfaceActionTranslition.h; sourceTree = "<group>"; };
 		DED3774121C7AA0D0032B883 /* LLYInterfaceActionTranslition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYInterfaceActionTranslition.m; sourceTree = "<group>"; };
 		DEEC01E022A610CE003D0D1E /* CardDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailController.swift; sourceTree = "<group>"; };
+		DEEC01E322A61874003D0D1E /* LockController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockController.swift; sourceTree = "<group>"; };
+		DEEC01E522A62378003D0D1E /* LockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
+		DEEC01E722A6241E003D0D1E /* LockInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockInfoController.swift; sourceTree = "<group>"; };
+		DEEC01EB22A65C2B003D0D1E /* GCDSwiftController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDSwiftController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -457,9 +465,10 @@
 		DE5686C0206229E4008B94FE /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
-				DE8C6E47229FBE2900D2CB98 /* tantan */,
 				DE5686DA20622C0C008B94FE /* LLYContactController.h */,
 				DE5686DB20622C0C008B94FE /* LLYContactController.m */,
+				DEEC01E222A61857003D0D1E /* SystemLock */,
+				DE8C6E47229FBE2900D2CB98 /* tantan */,
 				DED3773821C79F4D0032B883 /* TransformAnimation */,
 				DE4249D52148033F00908DB1 /* LLYImageBrowser */,
 				DE5270AD20DCDAA600F68262 /* AfnetWorking */,
@@ -737,6 +746,7 @@
 			children = (
 				DEA4DDE720A15B1400FCEC01 /* GCDController.h */,
 				DEA4DDE820A15B1400FCEC01 /* GCDController.m */,
+				DEEC01EB22A65C2B003D0D1E /* GCDSwiftController.swift */,
 			);
 			path = GCD;
 			sourceTree = "<group>";
@@ -774,6 +784,16 @@
 				DED3773E21C7A5790032B883 /* PresentDismissController.m */,
 			);
 			path = dismiss_present;
+			sourceTree = "<group>";
+		};
+		DEEC01E222A61857003D0D1E /* SystemLock */ = {
+			isa = PBXGroup;
+			children = (
+				DEEC01E322A61874003D0D1E /* LockController.swift */,
+				DEEC01E722A6241E003D0D1E /* LockInfoController.swift */,
+				DEEC01E522A62378003D0D1E /* LockView.swift */,
+			);
+			path = SystemLock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -979,12 +999,15 @@
 				DE18CB29214956D500CFD227 /* LayoutImagesView.m in Sources */,
 				DE5686E420622DB9008B94FE /* LLYTimeLineController.m in Sources */,
 				DEBB5D3522A11E17003E5CC0 /* TantanModel.swift in Sources */,
+				DEEC01E622A62378003D0D1E /* LockView.swift in Sources */,
 				DE631B9A21BE1651007E0E69 /* LLYImageBrowserView.m in Sources */,
 				DE5686D620622BE8008B94FE /* LLYMineController.m in Sources */,
+				DEEC01E422A61874003D0D1E /* LockController.swift in Sources */,
 				DE5686D320622BD9008B94FE /* LLYDiscoverController.m in Sources */,
 				DE5686D920622BF5008B94FE /* LLYHomeController.m in Sources */,
 				DED3773F21C7A5790032B883 /* PresentDismissController.m in Sources */,
 				DE8C6E4C229FC07D00D2CB98 /* tantanCollectionViewLayout.swift in Sources */,
+				DEEC01E822A6241E003D0D1E /* LockInfoController.swift in Sources */,
 				DE67F78221CB377400200686 /* LLYImg2ViewController.m in Sources */,
 				DED3773B21C79F9A0032B883 /* LLYTransformAnimationController.m in Sources */,
 				DED3774221C7AA0D0032B883 /* LLYInterfaceActionTranslition.m in Sources */,
@@ -992,6 +1015,7 @@
 				DE6FBD5D207A55AA00334509 /* LLYTimeLineFrameModel.m in Sources */,
 				DE29EA9420A2AE1000A379B9 /* QRCodeMyCardViewControl.swift in Sources */,
 				DEB78BA82092C4AF008DB4F0 /* LLYBlockController.m in Sources */,
+				DEEC01EC22A65C2B003D0D1E /* GCDSwiftController.swift in Sources */,
 				DE5686FF20624671008B94FE /* ViewController.m in Sources */,
 				DE631BA921BE5D9F007E0E69 /* LLYImageModel.m in Sources */,
 				DE7D132D207B64CF00FADC6F /* LLYLikeAndCommentView.m in Sources */,
