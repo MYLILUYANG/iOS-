@@ -32,7 +32,7 @@ class LockController: UIViewController {
         btn.setTitleColor(K_RandColor(), for: UIControlState.normal);
         btn.isEnabled = false;
         
-        var timeout:Int = 10;
+        var timeout:Int = 1;
         
        let timer = DispatchSource.makeTimerSource(flags: [], queue: DispatchQueue.global());
         

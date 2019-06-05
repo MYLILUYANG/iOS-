@@ -32,7 +32,7 @@
 -(void)loadData
 {
     
-    _addDataArray = @[@"Block 用法", @"Runtime 使用", @"GCD 使用详解", @"Sockets 使用",@"GPUImage 001", @"OpenGL SE", @"Masonry 使用", @"AFNetworking 使用", @"FMDB 使用", @"无限轮播图",@"二维码 Swift",@"图片浏览器",@"自定义转场动画",@"探探卡片滑动Swift",@"模仿系统锁屏"];
+    _addDataArray = @[@"Block 用法", @"Runtime 使用", @"GCD 使用详解", @"Sockets 使用",@"GPUImage 001", @"OpenGL SE", @"Masonry 使用", @"AFNetworking 使用", @"FMDB 使用", @"无限轮播图",@"二维码 Swift",@"图片浏览器",@"自定义转场动画",@"探探卡片滑动Swift",@"模仿系统锁屏(DispatchSource, 毛玻璃)"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -135,9 +135,17 @@
         controller.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:controller animated:YES];
     }else if (indexPath.row == 14){
-        LockController *controller = [[LockController alloc] init];
-        controller.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:controller animated:true];
+        if (@available(iOS 10.0, *)) {
+//            LockController *controller = [[LockController alloc] init];
+        } else {
+            // Fallback on earlier versions
+        }if (@available(iOS 10.0, *)) {
+            LockController *controller = [[LockController alloc] init];
+            controller.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:controller animated:true];
+        } else {
+            // Fallback on earlier versions
+        }
     }
 }
 
