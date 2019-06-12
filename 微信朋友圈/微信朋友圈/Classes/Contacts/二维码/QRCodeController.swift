@@ -46,7 +46,7 @@ class QRCodeController: UIViewController {
     {
         //1 判断输入能否添加到回话中
         
-        if !session.canAddInput(input)
+        if !session.canAddInput(input!)
         {
             return;
         }
@@ -57,7 +57,7 @@ class QRCodeController: UIViewController {
             return;
         }
         // 3、添加输入和输出到会话中
-        session.addInput(input)
+        session.addInput(input!)
         session.addOutput(output)
         // 4、 设置输出能够解析的数据类型
         output.metadataObjectTypes = output.availableMetadataObjectTypes;
@@ -96,7 +96,7 @@ class QRCodeController: UIViewController {
   //选择相册
     @IBAction func photoNavItem(_ sender: Any) {
  
-        if !UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.photoLibrary)
+        if !UIImagePickerController.isSourceTypeAvailable(UIImagePickerController.SourceType.photoLibrary)
         {
 //            LYLog(logName: "不能打开相册");
             return
@@ -113,9 +113,9 @@ class QRCodeController: UIViewController {
     //输入对象
     private lazy var input: AVCaptureDeviceInput? = {
        
-       let device = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo);
+        let device = AVCaptureDevice.default(for: AVMediaType.video);
 
-        return try? AVCaptureDeviceInput(device: device);
+        return try? AVCaptureDeviceInput(device: device!);
     }()
     //会话
     private lazy var session:AVCaptureSession =  AVCaptureSession();
@@ -153,7 +153,7 @@ class QRCodeController: UIViewController {
     
     lazy var imagePickController:UIImagePickerController = {
         let imagePick = UIImagePickerController();
-        imagePick.sourceType = UIImagePickerControllerSourceType.photoLibrary
+        imagePick.sourceType = UIImagePickerController.SourceType.photoLibrary
         imagePick.delegate = self;
         return imagePick;
     }()
@@ -181,7 +181,7 @@ extension QRCodeController:AVCaptureMetadataOutputObjectsDelegate
     private func drawLines(objc: AVMetadataMachineReadableCodeObject)
     {
         //安全校验
-        guard let array = objc.corners else {
+        guard let array:Array = objc.corners else {
             return;
         }
         
@@ -239,11 +239,13 @@ extension QRCodeController:UITabBarDelegate{
 
 extension QRCodeController: UIImagePickerControllerDelegate, UINavigationControllerDelegate
 {
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any])
+    private func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any])
     {
        
         //1、取出选中的图片
-        guard let image = info[UIImagePickerControllerOriginalImage] as? UIImage else {
+//        let pickImage =  info["UIImagePickerControllerOriginalImage"] as! UIImage ;
+        
+        guard let image = info["UIImagePickerControllerOriginalImage"] as? UIImage else {
 //            LYLog(logName: "获取图片失败")
             return
         }

@@ -39,7 +39,7 @@ DEPENDENCIES:
   - SDWebImage/GIF
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - AFNetworking
     - FLAnimatedImage
     - GPUImage
@@ -59,6 +59,6 @@ SPEC CHECKSUMS:
   SDAutoLayout: e9b36d04b8c0b504762a04d76fbbe5108944297a
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
 
-PODFILE CHECKSUM: 93e78c079c3599b5d416ae5e86c3b2ceeddbd56e
+PODFILE CHECKSUM: 63334feec48e549fc558438f2bdbd6549c5de65e
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.6.1

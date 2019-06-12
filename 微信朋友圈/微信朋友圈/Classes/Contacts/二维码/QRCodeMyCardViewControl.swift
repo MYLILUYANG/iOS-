@@ -36,7 +36,7 @@ class QRCodeMyCardViewControl: UIViewController {
         view.addSubview(button);
         
     }
-    func showQRCode() -> Void {
+    @objc func showQRCode() -> Void {
         
         if (textField.text == ""){
             print("请您填写内容");

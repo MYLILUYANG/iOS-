@@ -49,12 +49,12 @@ class CardSwitchViewController: UIViewController,UICollectionViewDelegate, UICol
         return cell;
     }
     
-    func clickDetail(tap:UITapGestureRecognizer) -> Void {
+    @objc func clickDetail(tap:UITapGestureRecognizer) -> Void {
         let controller = CardDetailController();
         self.navigationController?.pushViewController(controller, animated: true);
     }
     
-    func tapAction(tap:UIPanGestureRecognizer) -> Void{
+    @objc func tapAction(tap:UIPanGestureRecognizer) -> Void{
         let cell = tap.view;
         let indexpath:IndexPath = MycollectionView.indexPath(for: cell as! UICollectionViewCell)! as IndexPath;
         if tap.state ==  UIGestureRecognizer.State.changed{
