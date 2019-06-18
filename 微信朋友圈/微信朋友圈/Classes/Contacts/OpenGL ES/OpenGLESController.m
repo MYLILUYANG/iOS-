@@ -48,6 +48,7 @@
     }else if(indexPath.row == 1){
         loadStr = @"https://www.jianshu.com/p/c19837528ffb";
     }
+    
     MyBlogController *controller = [[MyBlogController alloc] init];
     controller.loadURLString = loadStr;
     [self.navigationController pushViewController:controller animated:YES];

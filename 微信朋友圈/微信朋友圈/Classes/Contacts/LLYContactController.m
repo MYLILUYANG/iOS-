@@ -32,7 +32,7 @@
 -(void)loadData
 {
     
-    _addDataArray = @[@"Block 用法", @"Runtime 使用", @"GCD 使用详解", @"Sockets 使用",@"GPUImage 001", @"OpenGL SE", @"Masonry 使用", @"AFNetworking 使用", @"FMDB 使用", @"无限轮播图",@"二维码 Swift",@"图片浏览器",@"自定义转场动画",@"探探卡片滑动Swift",@"模仿系统锁屏(DispatchSource, 毛玻璃) Swift", @"Swift 学习"];
+    _addDataArray = @[@"Block 用法", @"Runtime 使用", @"GCD 使用详解", @"Sockets 使用",@"GPUImage 001", @"OpenGL SE", @"Masonry 使用", @"AFNetworking 使用", @"FMDB 使用", @"无限轮播图",@"二维码 Swift",@"图片浏览器",@"自定义转场动画",@"探探卡片滑动Swift",@"模仿系统锁屏(DispatchSource, 毛玻璃) Swift", @"Swift 学习", @"隐形水印效果", @"基于 AVPlayer 视频播放器"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -148,11 +148,14 @@
         }
     }else if (indexPath.row == 15){
         SwiftViewController *controller = [[SwiftViewController alloc] init];
-        
         controller.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:controller animated:YES];
         
         
+    }else if (indexPath.row == 17) {
+        AVplayerController *controller = [[AVplayerController alloc] init];
+        controller.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:controller animated:YES];
     }
 }
 
