@@ -64,6 +64,8 @@
 		DE8C6E49229FBE6500D2CB98 /* CardSwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C6E48229FBE6500D2CB98 /* CardSwitchViewController.swift */; };
 		DE8C6E4C229FC07D00D2CB98 /* tantanCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8C6E4B229FC07D00D2CB98 /* tantanCollectionViewLayout.swift */; };
 		DEA4A0D322B8E6C6005644DB /* AVplayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA4A0D222B8E6C6005644DB /* AVplayerController.swift */; };
+		DEA4A0D622BA36E9005644DB /* LYPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA4A0D522BA36E9005644DB /* LYPlayerView.swift */; };
+		DEA4A0D922BB7C3C005644DB /* LYPlayerInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA4A0D822BB7C3C005644DB /* LYPlayerInfoModel.swift */; };
 		DEA4DDE620A1462700FCEC01 /* NSObject+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA4DDE520A1462700FCEC01 /* NSObject+Category.m */; };
 		DEA4DDE920A15B1400FCEC01 /* GCDController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA4DDE820A15B1400FCEC01 /* GCDController.m */; };
 		DEB742802085F151004EF510 /* LLYImageBrowse.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB7427F2085F151004EF510 /* LLYImageBrowse.m */; };
@@ -208,6 +210,8 @@
 		DE8C6E48229FBE6500D2CB98 /* CardSwitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSwitchViewController.swift; sourceTree = "<group>"; };
 		DE8C6E4B229FC07D00D2CB98 /* tantanCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tantanCollectionViewLayout.swift; sourceTree = "<group>"; };
 		DEA4A0D222B8E6C6005644DB /* AVplayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVplayerController.swift; sourceTree = "<group>"; };
+		DEA4A0D522BA36E9005644DB /* LYPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LYPlayerView.swift; sourceTree = "<group>"; };
+		DEA4A0D822BB7C3C005644DB /* LYPlayerInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LYPlayerInfoModel.swift; sourceTree = "<group>"; };
 		DEA4DDE420A1462700FCEC01 /* NSObject+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Category.h"; sourceTree = "<group>"; };
 		DEA4DDE520A1462700FCEC01 /* NSObject+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Category.m"; sourceTree = "<group>"; };
 		DEA4DDE720A15B1400FCEC01 /* GCDController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDController.h; sourceTree = "<group>"; };
@@ -692,6 +696,7 @@
 		DEA4A0D122B8E69C005644DB /* MyAVPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				DEA4A0D722BB7C25005644DB /* Model */,
 				DEA4A0D222B8E6C6005644DB /* AVplayerController.swift */,
 				DEA4A0D422B8E7F0005644DB /* View */,
 			);
@@ -701,8 +706,17 @@
 		DEA4A0D422B8E7F0005644DB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DEA4A0D522BA36E9005644DB /* LYPlayerView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		DEA4A0D722BB7C25005644DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DEA4A0D822BB7C3C005644DB /* LYPlayerInfoModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		DEA5380220635BBB00ED9A45 /* TimeLineCell */ = {
@@ -1023,6 +1037,7 @@
 				DEB742802085F151004EF510 /* LLYImageBrowse.m in Sources */,
 				DE18CB29214956D500CFD227 /* LayoutImagesView.m in Sources */,
 				DE5686E420622DB9008B94FE /* LLYTimeLineController.m in Sources */,
+				DEA4A0D622BA36E9005644DB /* LYPlayerView.swift in Sources */,
 				DEBB5D3522A11E17003E5CC0 /* TantanModel.swift in Sources */,
 				DEEC01E622A62378003D0D1E /* LockView.swift in Sources */,
 				DE631B9A21BE1651007E0E69 /* LLYImageBrowserView.m in Sources */,
@@ -1052,6 +1067,7 @@
 				DEBB5D3222A0C70E003E5CC0 /* TanTanViewCell.swift in Sources */,
 				DE4D738B207B02EA007819FF /* LLYOperationMenuView.m in Sources */,
 				DE631B9D21BE1666007E0E69 /* LLYimageBrowserController.m in Sources */,
+				DEA4A0D922BB7C3C005644DB /* LYPlayerInfoModel.swift in Sources */,
 				DE56869A2062296A008B94FE /* main.m in Sources */,
 				DE67F77F21CB352800200686 /* LLYImgController.m in Sources */,
 				DE631BA621BE4577007E0E69 /* LLYImageBrowserLayout.m in Sources */,
