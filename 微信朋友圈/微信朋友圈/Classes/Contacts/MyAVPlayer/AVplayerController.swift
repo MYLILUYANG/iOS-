@@ -13,7 +13,13 @@ class AVplayerController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white;
-        let view = LYPlayerView.init(frame: CGRect(x: 0, y: 64, width: K_ScreenW, height: K_Height(height: 200)));
+//        let view = LYPlayerView.init(frame: CGRect(x: 0, y: 64, width: K_ScreenW, height: K_Height(height: 200)));
+        let vvv = LYPreviewView();
+        
+        let view = LYPlayerView.loadViewFromNib()
+        
+//        let view = LYPlayerView
+        
 
         let model:LYPlayerInfoModel = LYPlayerInfoModel();
         model.url = "http://flv3.bn.netease.com/videolib3/1604/14/LSwHa2712/SD/LSwHa2712-mobile.mp4";

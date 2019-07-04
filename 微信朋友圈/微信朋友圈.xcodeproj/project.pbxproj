@@ -82,6 +82,7 @@
 		DED3773B21C79F9A0032B883 /* LLYTransformAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DED3773A21C79F9A0032B883 /* LLYTransformAnimationController.m */; };
 		DED3773F21C7A5790032B883 /* PresentDismissController.m in Sources */ = {isa = PBXBuildFile; fileRef = DED3773E21C7A5790032B883 /* PresentDismissController.m */; };
 		DED3774221C7AA0D0032B883 /* LLYInterfaceActionTranslition.m in Sources */ = {isa = PBXBuildFile; fileRef = DED3774121C7AA0D0032B883 /* LLYInterfaceActionTranslition.m */; };
+		DED3BE7C22BCBB9C0002F873 /* LYPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DED3BE7B22BCBB9C0002F873 /* LYPlayerView.xib */; };
 		DEEC01E122A610CE003D0D1E /* CardDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEC01E022A610CE003D0D1E /* CardDetailController.swift */; };
 		DEEC01E422A61874003D0D1E /* LockController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEC01E322A61874003D0D1E /* LockController.swift */; };
 		DEEC01E622A62378003D0D1E /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEC01E522A62378003D0D1E /* LockView.swift */; };
@@ -241,6 +242,7 @@
 		DED3773E21C7A5790032B883 /* PresentDismissController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentDismissController.m; sourceTree = "<group>"; };
 		DED3774021C7AA0D0032B883 /* LLYInterfaceActionTranslition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLYInterfaceActionTranslition.h; sourceTree = "<group>"; };
 		DED3774121C7AA0D0032B883 /* LLYInterfaceActionTranslition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLYInterfaceActionTranslition.m; sourceTree = "<group>"; };
+		DED3BE7B22BCBB9C0002F873 /* LYPlayerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LYPlayerView.xib; sourceTree = "<group>"; };
 		DEEC01E022A610CE003D0D1E /* CardDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailController.swift; sourceTree = "<group>"; };
 		DEEC01E322A61874003D0D1E /* LockController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockController.swift; sourceTree = "<group>"; };
 		DEEC01E522A62378003D0D1E /* LockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
@@ -707,6 +709,7 @@
 			isa = PBXGroup;
 			children = (
 				DEA4A0D522BA36E9005644DB /* LYPlayerView.swift */,
+				DED3BE7B22BCBB9C0002F873 /* LYPlayerView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -948,6 +951,7 @@
 				DE5686F220623246008B94FE /* Contact.xcassets in Resources */,
 				DE5686F020623237008B94FE /* Discover.xcassets in Resources */,
 				DE5686EC20622FC0008B94FE /* Home.xcassets in Resources */,
+				DED3BE7C22BCBB9C0002F873 /* LYPlayerView.xib in Resources */,
 				DE5686F82062333B008B94FE /* Image.xcassets in Resources */,
 				DEB742852085F9D5004EF510 /* LLYImageBrowseCell.xib in Resources */,
 				DE5686EE20622FD5008B94FE /* Mine.xcassets in Resources */,
